@@ -1,0 +1,32 @@
+<!--
+  - /*
+  -  * Copyright (c) 2025 Huawei Device Co., Ltd.
+  -  * Licensed under the Apache License, Version 2.0 (the ""License"");
+  -  * you may not use this file except in compliance with the License.
+  -  * You may obtain a copy of the License at
+  -  *
+  -  *     http://www.apache.org/licenses/LICENSE-2.0
+  -  *
+  -  * Unless required by applicable law or agreed to in writing, software
+  -  * distributed under the License is distributed on an ""AS IS"" BASIS,
+  -  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  -  * See the License for the specific language governing permissions and
+  -  * limitations under the License.
+  -  */
+  -
+  -->
+
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<rect id="Public/ic_public_home_filled" width="24.000000" height="24.000000" fill="#FFCCCC" fill-opacity="0"/>
+	<path id="形状结合" d="M22.4756 11.1893C22.8286 10.8172 22.8394 10.2449 22.5184 9.86069L22.4384 9.77554L14.7532 2.48444C13.2596 1.06747 10.9456 1.02176 9.39911 2.34732L9.24707 2.48444L1.56189 9.77554C1.16119 10.1557 1.14453 10.7886 1.52466 11.1893C1.87762 11.5613 2.44861 11.6022 2.84912 11.3018L2.93842 11.2265L10.6236 3.93536C11.3585 3.23813 12.4908 3.20493 13.2635 3.83575L13.3766 3.93536L21.0619 11.2265C21.4625 11.6066 22.0955 11.5899 22.4756 11.1893ZM3 19.2487L3 12.5822L11.312 4.65857C11.6892 4.30066 12.2778 4.29196 12.6531 4.62619L12.6885 4.65857L21 12.5818L21 19.2487C21 20.9056 19.6569 22.2487 18 22.2487L6 22.2487C4.34314 22.2487 3 20.9056 3 19.2487ZM12 13.4987C10.3431 13.4987 9 14.8419 9 16.4987L9 20.2487L15 20.2487L15 16.4987C15 14.8419 13.6569 13.4987 12 13.4987Z" clip-rule="evenodd" fill="#000000" fill-opacity="0.000000" fill-rule="evenodd"/>
+	<mask id="mask12_114" mask-type="alpha" maskUnits="userSpaceOnUse" x="1.250122" y="1.386292" width="21.500004" height="20.862453">
+		<path id="形状结合" d="M22.4756 11.1893C22.8286 10.8172 22.8394 10.2449 22.5184 9.86069L22.4384 9.77554L14.7532 2.48444C13.2596 1.06747 10.9456 1.02176 9.39911 2.34732L9.24707 2.48444L1.56189 9.77554C1.16119 10.1557 1.14453 10.7886 1.52466 11.1893C1.87762 11.5613 2.44861 11.6022 2.84912 11.3018L2.93842 11.2265L10.6236 3.93536C11.3585 3.23813 12.4908 3.20493 13.2635 3.83575L13.3766 3.93536L21.0619 11.2265C21.4625 11.6066 22.0955 11.5899 22.4756 11.1893ZM3 19.2487L3 12.5822L11.312 4.65857C11.6892 4.30066 12.2778 4.29196 12.6531 4.62619L12.6885 4.65857L21 12.5818L21 19.2487C21 20.9056 19.6569 22.2487 18 22.2487L6 22.2487C4.34314 22.2487 3 20.9056 3 19.2487ZM12 13.4987C10.3431 13.4987 9 14.8419 9 16.4987L9 20.2487L15 20.2487L15 16.4987C15 14.8419 13.6569 13.4987 12 13.4987Z" clip-rule="evenodd" fill="#0A59F7" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</mask>
+	<g mask="url(#mask12_114)">
+		<rect id="color/#000000" width="24.000000" height="24.000000" fill="#000000" fill-opacity="0.400000"/>
+	</g>
+</svg>

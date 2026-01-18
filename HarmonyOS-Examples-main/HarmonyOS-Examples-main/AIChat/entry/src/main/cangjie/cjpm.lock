@@ -1,0 +1,6 @@
+version = 0
+
+[requires]
+  commonmark4cj = {commitId = "ea2f00b2c658e53616d6194611bb6b94be70ac08", git = "https://gitcode.com/Cangjie-TPC/commonmark4cj.git", tag = "cjc_0.53.18"}
+  formula = {commitId = "c97af9e852978e5e4825e243512cfd5a5c4fbf71", git = "https://gitcode.com/Cangjie-TPC/formula-ffi.git", tag = "cjc_0.53.18"}
+  prism4cj = {commitId = "6d47675dcae7043b58f5bd0e3332253fde0eb0fd", git = "https://gitcode.com/Cangjie-TPC/prism4cj.git", tag = "cjc_0.53.18"}

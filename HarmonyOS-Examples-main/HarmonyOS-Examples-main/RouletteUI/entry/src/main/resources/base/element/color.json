@@ -1,0 +1,44 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "home_background_color",
+      "value": "#f1f3f5"
+    },
+    {
+      "name": "home_top_img_bg_color",
+      "value": "#f0f1f2"
+    },
+    {
+      "name": "turntable_bg_color",
+      "value": "#f6f6f6"
+    },
+    {
+      "name": "turntable_small_circel_color",
+      "value": "#e3262d"
+    },
+    {
+      "name": "editor_button_color",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "home_table_nor",
+      "value": "#727272"
+    },
+    {
+      "name": "home_table_sel",
+      "value": "#E42630"
+    },
+    {
+      "name": "public_text_color",
+      "value": "#C7C7CC"
+    }
+  ]
+}

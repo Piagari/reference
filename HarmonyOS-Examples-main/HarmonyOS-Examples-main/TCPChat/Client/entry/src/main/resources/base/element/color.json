@@ -1,0 +1,28 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "background_gay_01",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "background_gay_02",
+      "value": "#E5E5EA"
+    },
+    {
+      "name": "background_send",
+      "value": "#FF29B310"
+    },
+    {
+      "name": "background_receive",
+      "value": "#E5E5EA"
+    },
+    {
+      "name": "background_btu",
+      "value": "#FF29B310"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "A Concise and Compact Browser"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "A Concise and Compact Browser"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "HuyoVerse"
+    },
+    {
+      "name": "setting",
+      "value": "Settings"
+    },
+    {
+      "name": "about",
+      "value": "About"
+    },
+    {
+      "name": "empty",
+      "value": ""
+    },
+    {
+      "name": "darkModeScript",
+      "value": ""
+    }
+  ]
+}

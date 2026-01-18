@@ -1,0 +1,47 @@
+{
+  "name": "icon",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "通过 `name` 属性指定需要使用的图标名称。",
+      "image": "icon/basic.png",
+      "code": "SilkIcon(name: \"arrow\")"
+    },
+    {
+      "title": "自定义颜色",
+      "description": "通过 `fontColor` 属性设置图标颜色。",
+      "image": "icon/color.png",
+      "code": "SilkIcon(name: \"arrow\", fontColor: Color(255, 0, 0, alpha: 1.0))"
+    },
+    {
+      "title": "自定义大小",
+      "description": "通过 `fontSize` 属性设置图标大小。",
+      "image": "icon/size.png",
+      "code": "SilkIcon(name: \"arrow\", fontSize: 24.vp)"
+    },
+    {
+      "title": "使用图片URL",
+      "description": "当 `name` 是一个URL时，将渲染为图片图标。",
+      "image": "icon/url.png",
+      "code": "SilkIcon(name: \"https://example.com/icon.png\")"
+    },
+    {
+      "title": "使用资源图片",
+      "description": "当 `name` 是一个资源引用时，将渲染为图片图标。",
+      "image": "icon/resource.png",
+      "code": "SilkIcon(name: @r(app.icon.arrow))"
+    },
+    {
+      "title": "自定义字体族",
+      "description": "通过 `family` 属性可以自定义字体图标的字体族。",
+      "image": "icon/family.png",
+      "code": "SilkIcon(name: \"arrow\", family: \"my-icon-font\")"
+    },
+    {
+      "title": "自定义字重",
+      "description": "通过 `weight` 属性可以设置字体图标的粗细。",
+      "image": "icon/weight.png",
+      "code": "SilkIcon(name: \"arrow\", weight: FontWeight.Bold)"
+    }
+  ]
+}

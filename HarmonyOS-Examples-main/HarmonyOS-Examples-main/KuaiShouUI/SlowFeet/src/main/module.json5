@@ -1,0 +1,41 @@
+{
+  "module": {
+    "name": "SlowFeet",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "SlowFeetAbility",
+    "deviceTypes": [
+      "phone"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "srcEntry": "ohos_app_cangjie_SlowFeet.MyAbilityStage",
+    "abilities": [
+      {
+        "name": "SlowFeetAbility",
+        "srcEntry": "ohos_app_cangjie_SlowFeet.MainAbility",
+        "description": "$string:SlowFeetAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:SlowFeetAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ]
+  }
+}

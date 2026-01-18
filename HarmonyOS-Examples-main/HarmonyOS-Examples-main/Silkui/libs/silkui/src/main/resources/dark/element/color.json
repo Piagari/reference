@@ -1,0 +1,128 @@
+{
+  "color": [
+    {
+      "name": "silk_doc_white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "silk_doc_black",
+      "value": "#000000"
+    },
+    {
+      "name": "silk_doc_gray_1",
+      "value": "#f7f8fa"
+    },
+    {
+      "name": "silk_doc_gray_2",
+      "value": "#f2f3f5"
+    },
+    {
+      "name": "silk_doc_gray_6",
+      "value": "#969799"
+    },
+    {
+      "name": "silk_doc_gray_7",
+      "value": "#646566"
+    },
+    {
+      "name": "silk_doc_gray_8",
+      "value": "#323233"
+    },
+    {
+      "name": "silk_doc_blue",
+      "value": "#1989fa"
+    },
+    {
+      "name": "silk_doc_text_color_1",
+      "value": "#ffffff"
+    },
+    {
+      "name": "silk_doc_text_color_2",
+      "value": "#e6ffffff"
+    },
+    {
+      "name": "silk_doc_text_color_3",
+      "value": "#bfffffff"
+    },
+    {
+      "name": "silk_doc_text_color_4",
+      "value": "#99ffffff"
+    },
+    {
+      "name": "silk_doc_link_color",
+      "value": "#1bb5fe"
+    },
+    {
+      "name": "silk_doc_background",
+      "value": "#202124"
+    },
+    {
+      "name": "silk_doc_background_2",
+      "value": "#0fffffff"
+    },
+    {
+      "name": "silk_doc_background_3",
+      "value": "#1affffff"
+    },
+    {
+      "name": "silk_doc_header_background",
+      "value": "#4d011f3c"
+    },
+    {
+      "name": "silk_doc_border_color",
+      "value": "#3a3a3c"
+    },
+    {
+      "name": "silk_doc_code_color",
+      "value": "#d9c8c8c8"
+    },
+    {
+      "name": "silk_doc_code_comment_color",
+      "value": "#646566"
+    },
+    {
+      "name": "silk_doc_code_background",
+      "value": "#3d000000"
+    },
+    {
+      "name": "silk_doc_blockquote_color",
+      "value": "#bae6fd"
+    },
+    {
+      "name": "silk_doc_blockquote_background",
+      "value": "#40075985"
+    },
+    {
+      "name": "text_color",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "text_color_2",
+      "value": "#707070"
+    },
+    {
+      "name": "text_color_3",
+      "value": "#4d4d4d"
+    },
+    {
+      "name": "border_color",
+      "value": "#3a3a3c"
+    },
+    {
+      "name": "active_color",
+      "value": "#3a3a3c"
+    },
+    {
+      "name": "background",
+      "value": "#000"
+    },
+    {
+      "name": "background_2",
+      "value": "#1c1c1e"
+    },
+    {
+      "name": "background_3",
+      "value": "#37363b"
+    }
+  ]
+}

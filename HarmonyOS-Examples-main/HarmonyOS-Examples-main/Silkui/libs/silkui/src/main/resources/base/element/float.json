@@ -1,0 +1,88 @@
+{
+  "float": [
+    {
+      "name": "padding_base",
+      "value": "4"
+    },
+    {
+      "name": "padding_xs",
+      "value": "8"
+    },
+    {
+      "name": "padding_sm",
+      "value": "12"
+    },
+    {
+      "name": "padding_md",
+      "value": "16"
+    },
+    {
+      "name": "padding_lg",
+      "value": "24"
+    },
+    {
+      "name": "padding_xl",
+      "value": "32"
+    },
+    {
+      "name": "font_size_xs",
+      "value": "10"
+    },
+    {
+      "name": "font_size_sm",
+      "value": "12"
+    },
+    {
+      "name": "font_size_md",
+      "value": "14"
+    },
+    {
+      "name": "font_size_lg",
+      "value": "16"
+    },
+    {
+      "name": "font_bold",
+      "value": "600"
+    },
+    {
+      "name": "font_height_xs",
+      "value": "14"
+    },
+    {
+      "name": "font_height_sm",
+      "value": "18"
+    },
+    {
+      "name": "font_height_md",
+      "value": "20"
+    },
+    {
+      "name": "font_height_lg",
+      "value": "22"
+    },
+    {
+      "name": "border_width",
+      "value": "1"
+    },
+    {
+      "name": "radius_sm",
+      "value": "2"
+    },
+    {
+      "name": "radius_md",
+      "value": "4"
+    },
+    {
+      "name": "radius_lg",
+      "value": "8"
+    },
+    {
+      "name": "radius_max",
+      "value": "1000"
+    },
+    {
+      "name": "cell_line_height",
+      "value": "24"
+    }
+  ]
+}

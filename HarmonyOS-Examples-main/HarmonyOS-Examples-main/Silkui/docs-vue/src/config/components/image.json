@@ -1,0 +1,47 @@
+{
+  "name": "image",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "基础用法与原生 `img` 标签一致，可以设置 `src`、`width`、`height`、`alt` 等原生属性。",
+      "image": "image/basic.png",
+      "code": "@Builder\nfunc BasicImageContent() {\n  SilkImage(\n    src: \"https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg\",\n    props: SilkImageOptions(\n      width: 100.vp,\n      height: 100.vp\n    )\n  )\n}"
+    },
+    {
+      "title": "填充模式",
+      "description": "通过 `fit` 属性可以设置图片填充模式，等同于原生的 [object-fit](https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit) 属性，可选值见下方表格。",
+      "image": "image/fit.png",
+      "code": "@Builder\nfunc FitImageContent() {\n  SilkImage(\n    src: \"https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg\",\n    props: SilkImageOptions(\n      width: 10.vp,\n      height: 10.vp,\n      fit: SilkImageFit.CONTAIN\n    )\n  )\n}"
+    },
+    {
+      "title": "图片位置",
+      "description": "通过 `position` 属性可以设置图片位置，结合 `fit` 属性使用，等同于原生的 [object-position](https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-position) 属性。",
+      "image": "image/position.png",
+      "code": "@Builder\nfunc PositionImageContent() {\n  SilkImage(\n    src: \"https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg\",\n    props: SilkImageOptions(\n      width: 10.vp,\n      height: 10.vp,\n      fit: SilkImageFit.COVER,\n      position: SilkImagePosition.LEFT\n    )\n  )\n}"
+    },
+    {
+      "title": "圆形图片",
+      "description": "通过 `round` 属性可以设置图片变圆，注意当图片宽高不相等且 `fit` 为 `CONTAIN` 或 `SCALE_DOWN` 时，将无法填充一个完整的圆形。",
+      "image": "image/round.png",
+      "code": "@Builder\nfunc RoundImageContent() {\n  SilkImage(\n    src: \"https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg\",\n    props: SilkImageOptions(\n      width: 10.vp,\n      height: 10.vp,\n      round: true\n    )\n  )\n}"
+    },
+    {
+      "title": "加载中提示",
+      "description": "`SilkImage` 组件提供了默认的加载中提示，支持通过 `Loading` 插槽自定义内容。",
+      "image": "image/loading.png",
+      "code": "@Builder\nfunc LoadingContent() {\n  Column() {\n    SilkLoading(size: 20.vp)\n  }\n  .width(100.percent)\n  .height(100.percent)\n  .justifyContent(FlexAlign.Center)\n  .alignItems(HorizontalAlign.Center)\n  .backgroundColor(Color(0xf7, 0xf8, 0xfa, alpha: 1.0))\n}\n\n@Builder\nfunc LoadingImageContent() {\n  SilkImage(\n    src: \"https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg\",\n    props: SilkImageOptions(\n      width: 10.vp,\n      height: 10.vp\n    ),\n    Loading: LoadingContent,\n    hasLoading: true\n  )\n}"
+    },
+    {
+      "title": "加载失败提示",
+      "description": "`SilkImage` 组件提供了默认的加载失败提示，支持通过 `Error` 插槽自定义内容。",
+      "image": "image/error.png",
+      "code": "@Builder\nfunc ErrorContent() {\n  Column() {\n    Text(\"加载失败\")\n      .fontSize(14.vp)\n      .fontColor(Color(0x96, 0x97, 0x99, alpha: 1.0))\n  }\n  .width(100.percent)\n  .height(100.percent)\n  .justifyContent(FlexAlign.Center)\n  .alignItems(HorizontalAlign.Center)\n  .backgroundColor(Color(0xf7, 0xf8, 0xfa, alpha: 1.0))\n}\n\n@Builder\nfunc ErrorImageContent() {\n  SilkImage(\n    src: \"https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg\",\n    props: SilkImageOptions(\n      width: 10.vp,\n      height: 10.vp\n    ),\n    Error: ErrorContent,\n    hasError: true\n  )\n}"
+    },
+    {
+      "title": "事件监听",
+      "description": "通过 `click`、`load` 和 `error` 事件可以监听图片的点击、加载完成和加载失败事件。",
+      "image": "image/event.png",
+      "code": "@Builder\nfunc EventImageContent() {\n  SilkImage(\n    src: \"https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg\",\n    props: SilkImageOptions(\n      width: 10.vp,\n      height: 10.vp\n    ),\n    click: { _ => PromptAction.showToast(message: \"点击图片\") },\n    load: { => PromptAction.showToast(message: \"图片加载完成\") },\n    error: { => PromptAction.showToast(message: \"图片加载失败\") }\n  )\n}"
+    }
+  ]
+}

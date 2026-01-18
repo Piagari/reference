@@ -1,0 +1,23 @@
+{
+  "name": "highlight",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "通过 `sourceString` 属性设置原始文本，通过 `keywords` 属性设置需要高亮的关键词。",
+      "image": "highlight/basic.png",
+      "code": "SilkHighLight(\n    props: SilkHighLightOptions(\n        sourceString: \"慢慢来，不要急，生活给你出了难题，可也终有一天会给出答案。\",\n        keywords: [\"难题\"]\n    )\n)"
+    },
+    {
+      "title": "多个关键词",
+      "description": "可以同时高亮多个关键词。",
+      "image": "highlight/more.png",
+      "code": "SilkHighLight(\n    props: SilkHighLightOptions(\n        sourceString: \"慢慢来，不要急，生活给你出了难题，可也终有一天会给出答案。\",\n        keywords: [\"难题\", \"终有一天\", \"答案\"]\n    )\n)"
+    },
+    {
+      "title": "自定义高亮样式",
+      "description": "通过 `color`、`fontSize` 和 `fontWeight` 属性可以自定义高亮文本的样式。",
+      "image": "highlight/color.png",
+      "code": "SilkHighLight(\n    props: SilkHighLightOptions(\n        sourceString: \"慢慢来，不要急，生活给你出了难题，可也终有一天会给出答案。\",\n        keywords: [\"生活\"],\n        color: Color.RED\n    )\n)"
+    }
+  ]
+}

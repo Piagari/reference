@@ -1,0 +1,56 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "nor_white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "font_color",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "time_color",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "comment_text_color",
+      "value": "#5B5B5B"
+    },
+    {
+      "name": "comment_nor_text_color",
+      "value": "#b1b1b1"
+    },
+    {
+      "name": "dark_gray_color",
+      "value": "#82878d"
+    },
+    {
+      "name": "light_black",
+      "value": "#181d23"
+    },
+    {
+      "name": "message_text_color",
+      "value": "#787878"
+    },
+    {
+      "name": "message_new_follow_color",
+      "value": "#478ffb"
+    },
+    {
+      "name": "message_interactive_message_color",
+      "value": "#ff2c70"
+    },
+    {
+      "name": "my_top_img_row_color",
+      "value": "#b1b1b1"
+    },
+    {
+      "name": "my_body_top_row_down_img_color",
+      "value": "#f3f3f3"
+    }
+  ]
+}

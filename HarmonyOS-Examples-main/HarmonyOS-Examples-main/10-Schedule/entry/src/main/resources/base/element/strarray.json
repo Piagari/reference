@@ -1,0 +1,26 @@
+{
+  "strarray": [
+    {
+      "name": "classIndex",
+      "value": [
+        {"value": "1"},{"value": "2"},{"value": "3"},{"value": "4"},
+        {"value": "5"},{"value": "6"},{"value": "7"},{"value": "8"}
+      ]
+    },
+    {
+      "name": "classTime",
+      "value": [
+        {"value": "8:30-9:15"}, {"value": "9:25-10:10"}, {"value": "10:30-11:15"},
+        {"value": "11:15-12:10"}, {"value": "14:10-14:55"}, {"value": "15:05-15:45"},
+        {"value": "15:55-16:30"}, {"value": "16:45-17:00"}
+      ]
+    },
+    {
+      "name": "classificationNames",
+      "value": [
+        {"value": "星期一"},{"value": "星期二"},{"value": "星期三"},{"value": "星期四"},
+        {"value": "星期五"},{"value": "星期六"},{"value": "星期天"}
+      ]
+    }
+  ]
+}

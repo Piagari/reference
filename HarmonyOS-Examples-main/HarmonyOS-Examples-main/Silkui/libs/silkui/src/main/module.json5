@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "silkui",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "collapse",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "通过 `SilkCollapseItem` 组件构建折叠面板，`active` 属性控制面板是否默认展开。",
+      "image": "collapse/basic.png",
+      "code": "@Builder\nfunc C1_Children1 () {\n    Text(\"代码是写出来给人看的，附带能在机器上运行附带能在机器上运行。\")\n        .width(100.percent)\n    .padding(top: 12,bottom: 12)\n    .fontSize(14)\n        .fontColor(@r(app.color.silkdoctextcolor4))\n    .textAlign(TextAlign.Start)\n}\n@Builder\nfunc C1_Children2 () {\n    Text(\"技术无非就是那些开发它的人的共同灵魂。\")\n        .width(100.percent)\n    .padding(top: 12,bottom: 12)\n    .fontSize(14)\n        .fontColor(@r(app.color.silkdoctextcolor4))\n    .textAlign(TextAlign.Start)\n}\n@Builder\nfunc C1_Children3 () {\n    Text(\"在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。\")\n        .width(100.percent)\n    .padding(top: 12,bottom: 12)\n    .fontSize(14)\n        .fontColor(@r(app.color.silkdoctextcolor4))\n    .textAlign(TextAlign.Start)\n}\n@Builder\nfunc Children1 () {\n    Column(){\n        SilkCollapseItem(active: true, props: SilkCollapseOptions(title: \"标题1\"), Content: C1_Children1)\n        SilkCollapseItem(active: false, props: SilkCollapseOptions(title: \"标题2\"), Content: C1_Children2)\n        SilkCollapseItem(active: false, props: SilkCollapseOptions(title: \"标题3\"), Content: C1_Children3)\n    }\n}\n...\nSilkCollapse(accordion: false, Childrens: Children1)"
+    },
+    {
+      "title": "手风琴模式",
+      "description": "通过 `accordion` 属性可以设置为手风琴模式，最多展开一个面板。",
+      "image": "collapse/qin.png",
+      "code": "@Builder\nfunc C1_Children1 () {\n    Text(\"代码是写出来给人看的，附带能在机器上运行附带能在机器上运行。\")\n        .width(100.percent)\n    .padding(top: 12,bottom: 12)\n    .fontSize(14)\n        .fontColor(@r(app.color.silkdoctextcolor4))\n    .textAlign(TextAlign.Start)\n}\n@Builder\nfunc C1_Children2 () {\n    Text(\"技术无非就是那些开发它的人的共同灵魂。\")\n        .width(100.percent)\n    .padding(top: 12,bottom: 12)\n    .fontSize(14)\n        .fontColor(@r(app.color.silkdoctextcolor4))\n    .textAlign(TextAlign.Start)\n}\n@Builder\nfunc C1_Children3 () {\n    Text(\"在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。\")\n        .width(100.percent)\n    .padding(top: 12,bottom: 12)\n    .fontSize(14)\n        .fontColor(@r(app.color.silkdoctextcolor4))\n    .textAlign(TextAlign.Start)\n}\n@Builder\nfunc Children1 () {\n    Column(){\n        SilkCollapseItem(active: true, props: SilkCollapseOptions(title: \"标题1\"), Content: C1_Children1)\n        SilkCollapseItem(active: false, props: SilkCollapseOptions(title: \"标题2\"), Content: C1_Children2)\n        SilkCollapseItem(active: false, props: SilkCollapseOptions(title: \"标题3\"), Content: C1_Children3)\n    }\n}\n...\nSilkCollapse(accordion: true, Childrens: Children1)"
+    },
+    {
+      "title": "禁用状态",
+      "description": "通过 `disabled` 属性可以禁用折叠面板项。",
+      "image": "collapse/disabled.png",
+      "code": "@Builder\nfunc Children2 () {\n    Column(){\n        SilkCollapseItem(active: true, props: SilkCollapseOptions(title: \"标题1\"), Content: C1_Children1)\n        SilkCollapseItem(active: false, props: SilkCollapseOptions(title: \"标题2\", disabled: true), Content: C1_Children2)\n        SilkCollapseItem(active: false, props: SilkCollapseOptions(title: \"标题3\", disabled: true), Content: C1_Children3)\n    }\n}\n...\nSilkCollapse(accordion: true, Childrens: Children2)"
+    },
+    {
+      "title": "自定义标题",
+      "description": "可以使用 `SilkCollapseItemCustomTitle` 自定义标题内容。",
+      "image": "collapse/custom.png",
+      "code": "@Builder\nfunc CollapseTitle1 () {\n    Text() {\n        Span(\"标题1\")\n        ImageSpan(@r(app.media.ic_public_warn))\n        .width(12)\n            .aspectRatio(1)\n    }\n}\n@Builder\nfunc CollapseCon () {\n    Text('在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准')\n        .width(100.percent)\n    .padding(top: 12, bottom: 12)\n    .fontSize(14)\n        .fontColor(@r(app.color.silkdoctextcolor4))\n    .textAlign(TextAlign.Start)\n}\n@Builder\nfunc Children3 () {\n    Column(){\n        SilkCollapseItemCustomTitle(active: true, props: SilkCollapseOptions(), Content: CollapseCon, Title: CollapseTitle1)\n    }\n}\n...\nSilkCollapse(accordion: true, Childrens: Children3)"
+    },
+    {
+      "title": "全部展开/收起",
+      "description": "使用 `SilkCollapseAll` 和 `SilkCollapseToggleController` 可以实现全部展开/收起功能。",
+      "image": "collapse/all.png",
+      "code": "let toggleController = SilkCollapseToggleController()\n\nSilkCollapseAll(silkCollapseToggleController: silkCollapseToggleController, Childrens: Children1)\n\n// 全部展开\ntoggleController.toggleAll(flag: true)\n\n// 全部收起\ntoggleController.toggleAll(flag: false)"
+    }
+  ]
+}

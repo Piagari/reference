@@ -1,0 +1,53 @@
+{
+  "name": "cell",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "`Cell` 可以单独使用，也可以与 `CellGroup` 搭配使用",
+      "image": "cell/basic.png",
+      "code": "@Builder\nfunc fn1() {\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\")\n    )\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\", label: \"描述信息\")\n    )\n}\n...\nSilkCellGroup(props: SilkCellGroupOptions(), Childrens: this.fn1)"
+    },
+    {
+      "title": "卡片风格",
+      "description": "通过 CellGroup 的 inset 属性，可以将单元格转换为圆角卡片风格",
+      "image": "cell/card.png",
+      "code": "@Builder\nfunc fn1() {\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\")\n    )\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\", label: \"描述信息\")\n    )\n}\n...\nSilkCellGroup(props: SilkCellGroupOptions(inset: true), Childrens: this.fn1)"
+    },
+    {
+      "title": "单元格大小",
+      "description": "通过 `size` 属性可以控制单元格的大小。",
+      "image": "cell/size.png",
+      "code": "@Builder\nfunc fn2() {\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\", size: SilkCellSize.Large),\n    )\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\", label: \"描述信息\", size: SilkCellSize.Large)\n    )\n}\n...\nSilkCellGroup(props: SilkCellGroupOptions(), Childrens: this.fn2)"
+    },
+    {
+      "title": "展示图标",
+      "description": "通过 `icon` 属性在单元格左侧展示图标。",
+      "image": "cell/icon.png",
+      "code": "@Builder\nfunc fn3() {\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\", icon: @r(app.media.location_o)),\n    )\n}\n...\nSilkCellGroup(props: SilkCellGroupOptions(), Childrens: this.fn3)"
+    },
+    {
+      "title": "展示箭头",
+      "description": "设置 `isLink` 属性后会在单元格右侧显示箭头，并且可以通过 `arrowDirection` 属性控制箭头方向。",
+      "image": "cell/arrow.png",
+      "code": "@Builder\nfunc fn4() {\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", isLink: true),\n    )\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\", isLink: true)\n    )\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\", isLink: true, arrowDirection: SilkCellArrowDirection.DOWN)\n    )\n}\n...\nSilkCellGroup(props: SilkCellGroupOptions(), Childrens: this.fn4)"
+    },
+    {
+      "title": "分组标题",
+      "description": "通过 `CellGroup` 的 `title` 属性可以指定分组标题。",
+      "image": "cell/group.png",
+      "code": "@Builder\nfunc fn5() {\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\"),\n    )\n}\n...\nSilkCellGroup(props: SilkCellGroupOptions(title: @r(app.string.cell_group_name1)), Childrens: this.fn5)\nSilkCellGroup(props: SilkCellGroupOptions(title: \"分组2\"), Childrens: this.fn5)"
+    },
+    {
+      "title": "自定义内容",
+      "description": "如果以上属性不满足你的需求，可以使用自定义内容来自定义单元格的各个部分。",
+      "image": "cell/slot.png",
+      "code": "@Builder\nfunc CustomTitle () {\n    Row(4) {\n        Text(\"单元格\")\n            .fontSize(@r(app.float.font_size_md))\n        .fontColor(@r(app.color.text_color))\n        Text(\"标签\")\n            .fontSize(@r(app.float.font_size_sm))\n        .fontColor(@r(app.color.white))\n        .padding(right: 4.0, left: 4.0)\n        .borderRadius(@r(app.float.radius_sm))\n        .backgroundColor(@r(app.color.primary_color))\n    }\n}\n@Builder\nfunc CustomValue () {\n    Image(@r(app.media.search))\n    .height(16)\n        .fillColor(@r(app.color.text_color))\n}\n@Builder\nfunc fn7() {\n    SilkCell(\n        hasTitle: true,\n    Title: this.CustomTitle,\n    props: SilkCellOptions(value: \"内容\", isLink: true),\n    )\n    SilkCell(\n        hasRightIcon: true,\n    RightIcon: this.CustomValue,\n    props: SilkCellOptions(title: \"单元格\", icon: @r(app.media.shop_o)),\n    )\n}\n...\nSilkCellGroup(props: SilkCellGroupOptions(), Childrens: this.fn7)"
+    },
+    {
+      "title": "垂直居中",
+      "description": "通过 `center` 属性可以让单元格垂直居中对齐。",
+      "image": "cell/center.png",
+      "code": "@Builder\nfunc fn8() {\n    SilkCell(\n        props: SilkCellOptions(title: \"单元格\", value: \"内容\", center: true, label: \"描述信息\"),\n    )\n}\n...\nSilkCellGroup(props: SilkCellGroupOptions(), Childrens: this.fn8)"
+    }
+  ]
+}

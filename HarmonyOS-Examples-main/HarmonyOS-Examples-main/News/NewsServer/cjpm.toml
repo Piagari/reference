@@ -1,0 +1,20 @@
+[dependencies]
+
+[package]
+  cjc-version = "0.53.4"
+  compile-option = "-Woff unused"
+  description = "nothing here"
+  link-option = ""
+  name = "default"
+  output-type = "executable"
+  src-dir = ""
+  target-dir = ""
+  version = "1.0.0"
+  package-configuration = {}
+
+[target.x86_64-w64-mingw32] 
+  compile-option = "-O0 -Woff all"
+  link-option = "-lmysqlclient -lmysqlclient_cj -lmysqlclient_ffi"
+  [target.x86_64-w64-mingw32.bin-dependencies] # 仓颉二进制库依赖
+    path-option = ["./mysqlclient-ffi/target/release", "./mysqlclient-ffi/target/release/mysqlclient_ffi"]
+  # --import-path C:\Users\dongy\Downloads\mysqlclient-ffi\target\release -L C:\Users\dongy\Downloads\mysqlclient-ffi\target\release\mysqlclient

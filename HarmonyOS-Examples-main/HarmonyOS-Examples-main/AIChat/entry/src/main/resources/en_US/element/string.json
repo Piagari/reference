@@ -1,0 +1,92 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "AIChat"
+    },
+    {
+      "name": "send",
+      "value": "send"
+    },
+    {
+      "name": "reason",
+      "value": "Used to initiate network data requests."
+    },
+    {
+      "name": "configure",
+      "value": "Configure"
+    },
+    {
+      "name": "chat",
+      "value": "Chat"
+    },
+    {
+      "name": "new_chat",
+      "value": "New chat"
+    },
+    {
+      "name": "message_count",
+      "value": " messages"
+    },
+    {
+      "name": "model",
+      "value": "Model"
+    },
+    {
+      "name": "api_key",
+      "value": "Api Key"
+    },
+    {
+      "name": "base_url",
+      "value": "url"
+    },
+    {
+      "name": "system_prompt",
+      "value": "System Prompt"
+    },
+    {
+      "name": "chat_timeout",
+      "value": "chat timeout time(second)"
+    },
+    {
+      "name": "setting",
+      "value": "Setting"
+    },
+    {
+      "name": "back",
+      "value": "Back"
+    },
+    {
+      "name": "save",
+      "value": "Save"
+    },
+    {
+      "name": "model_generator_configure",
+      "value": "Model Generator Configure"
+    },
+    {
+      "name": "max_tokens",
+      "value": "Max Tokens When generator"
+    },
+    {
+      "name": "temperature",
+      "value": "Temperature"
+    },
+    {
+      "name": "top_p",
+      "value": "top_p"
+    },
+    {
+      "name": "stream",
+      "value": "Decide use stream chat or not"
+    }
+  ]
+}

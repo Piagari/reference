@@ -1,0 +1,11 @@
+[
+    {
+        "Name": " mysql-client ",
+        "License": " GPLv2 ",
+        "License File": " LICENSE ",
+        "Owner" : "",
+        "Upstream URL": " https://github.com/mysql/mysql-server/tree/mysql-8.0.33 ",
+        "Version Number": " v8.0.33 ",
+        "Description": " The C API provides low-level access to the MySQL client/server protocol and enables C programs to access database contents. "
+    }
+]

@@ -1,0 +1,188 @@
+{
+  "float": [
+    {
+      "name": "fp1",
+      "value": "1fp"
+    },
+    {
+      "name": "fp2",
+      "value": "2fp"
+    },
+    {
+      "name": "fp3",
+      "value": "3fp"
+    },
+    {
+      "name": "fp4",
+      "value": "4fp"
+    },
+    {
+      "name": "fp5",
+      "value": "5fp"
+    },
+    {
+      "name": "fp6",
+      "value": "6fp"
+    },
+    {
+      "name": "fp7",
+      "value": "7fp"
+    },
+    {
+      "name": "fp8",
+      "value": "8fp"
+    },
+    {
+      "name": "fp9",
+      "value": "9fp"
+    },
+    {
+      "name": "fp10",
+      "value": "10fp"
+    },
+    {
+      "name": "fp11",
+      "value": "11fp"
+    },
+    {
+      "name": "fp12",
+      "value": "12fp"
+    },
+    {
+      "name": "fp13",
+      "value": "13fp"
+    },
+    {
+      "name": "vp1",
+      "value": "1vp"
+    },
+    {
+      "name": "vp2",
+      "value": "2vp"
+    },
+    {
+      "name": "vp3",
+      "value": "3vp"
+    },
+    {
+      "name": "vp4",
+      "value": "4vp"
+    },
+    {
+      "name": "vp5",
+      "value": "5vp"
+    },
+    {
+      "name": "vp6",
+      "value": "6vp"
+    },
+    {
+      "name": "vp7",
+      "value": "7vp"
+    },
+    {
+      "name": "vp8",
+      "value": "8vp"
+    },
+    {
+      "name": "vp9",
+      "value": "9vp"
+    },
+    {
+      "name": "vp10",
+      "value": "10vp"
+    },
+    {
+      "name": "vp11",
+      "value": "11vp"
+    },
+    {
+      "name": "vp12",
+      "value": "12vp"
+    },
+    {
+      "name": "vp13",
+      "value": "13vp"
+    },
+    {
+      "name": "vp14",
+      "value": "14vp"
+    },
+    {
+      "name": "vp15",
+      "value": "15vp"
+    },
+    {
+      "name": "vp16",
+      "value": "16vp"
+    },
+    {
+      "name": "vp17",
+      "value": "17vp"
+    },
+    {
+      "name": "vp18",
+      "value": "18vp"
+    },
+    {
+      "name": "vp19",
+      "value": "19vp"
+    },
+    {
+      "name": "vp20",
+      "value": "20vp"
+    },
+    {
+      "name": "vp30",
+      "value": "30vp"
+    },
+    {
+      "name": "vp40",
+      "value": "40vp"
+    },
+    {
+      "name": "vp50",
+      "value": "50vp"
+    },
+    {
+      "name": "vp60",
+      "value": "60vp"
+    },
+    {
+      "name": "vp70",
+      "value": "70vp"
+    },
+    {
+      "name": "vp80",
+      "value": "80vp"
+    },
+    {
+      "name": "vp90",
+      "value": "90vp"
+    },
+    {
+      "name": "vp100",
+      "value": "100vp"
+    },
+    {
+      "name": "vp110",
+      "value": "110vp"
+    },
+    {
+      "name": "vp120",
+      "value": "120vp"
+    },
+    {
+      "name": "vp130",
+      "value": "130vp"
+    },
+    {
+      "name": "vp140",
+      "value": "140vp"
+    },
+    {
+      "name": "vp150",
+      "value": "150vp"
+    }
+  ]
+}

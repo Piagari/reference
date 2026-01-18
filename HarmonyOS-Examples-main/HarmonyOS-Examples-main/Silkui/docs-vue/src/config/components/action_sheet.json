@@ -1,0 +1,41 @@
+{
+  "name": "action_sheet",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "通过 `actions` 属性设置选项列表，每个选项包含 `name` 属性。",
+      "image": "action_sheet/basic.png",
+      "code": "SilkActionSheet(\n    show: show1,\n    props: SilkActionSheetOptions(\n        actions: [\n            SilkActionSheetAction(name: \"选项一\"),\n            SilkActionSheetAction(name: \"选项二\"),\n            SilkActionSheetAction(name: \"选项三\")\n        ]\n    ),\n    select: { action, _ => SilkToast.toast(action.name); show1 = false}\n)"
+    },
+    {
+      "title": "展示图标",
+      "description": "通过 `icon` 属性为选项添加图标。",
+      "image": "action_sheet/icon.png",
+      "code": "SilkActionSheet(\n    show: show2,\n    props: SilkActionSheetOptions(\n        actions: [\n            SilkActionSheetAction(name: \"选项一\", icon: \"cart-o\"),\n            SilkActionSheetAction(name: \"选项二\", icon: \"shop-o\"),\n            SilkActionSheetAction(name: \"选项三\", icon: \"star-o\")\n        ]\n    ),\n    select: { action, _ => SilkToast.toast(action.name); show2 = false}\n)"
+    },
+    {
+      "title": "展示取消按钮",
+      "description": "设置 `cancelText` 属性可以显示取消按钮，点击取消按钮会触发 `cancel` 回调。",
+      "image": "action_sheet/cancel.png",
+      "code": "SilkActionSheet(\n    show: show3,\n    props: SilkActionSheetOptions(\n        cancelText: \"取消\",\n        closeOnClickAction: true,\n        actions: [\n            SilkActionSheetAction(name: \"选项一\"),\n            SilkActionSheetAction(name: \"选项二\"),\n            SilkActionSheetAction(name: \"选项三\")\n        ]\n    ),\n    cancel: { => SilkToast.toast(\"取消\")}\n)"
+    },
+    {
+      "title": "展示描述信息",
+      "description": "通过 `description` 属性可以在选项上方显示描述信息，选项可以设置 `subname` 属性显示子标题。",
+      "image": "action_sheet/description.png",
+      "code": "SilkActionSheet(\n    show: show4,\n    props: SilkActionSheetOptions(\n        cancelText: \"取消\",\n        closeOnClickAction: true,\n        description: \"这是一段描述信息\",\n        actions: [\n            SilkActionSheetAction(name: \"选项一\"),\n            SilkActionSheetAction(name: \"选项二\"),\n            SilkActionSheetAction(name: \"选项三\", subname: \"描述信息\")\n        ]\n    )\n)"
+    },
+    {
+      "title": "选项状态",
+      "description": "选项可以设置禁用、加载状态，也可以自定义颜色。",
+      "image": "action_sheet/status.png",
+      "code": "SilkActionSheet(\n    show: show5,\n    props: SilkActionSheetOptions(\n        cancelText: \"取消\",\n        closeOnClickAction: true,\n        actions: [\n            SilkActionSheetAction(name: \"选项一\", color: Color(0xffee0a24)),\n            SilkActionSheetAction(name: \"选项二\", disabled: true),\n            SilkActionSheetAction(name: \"选项三\", loading: true)\n        ]\n    )\n)"
+    },
+    {
+      "title": "自定义面板",
+      "description": "通过 `content` 插槽可以完全自定义面板内容。",
+      "image": "action_sheet/custom.png",
+      "code": "@Builder\nfunc content6 () {\n    Text(\"内容\")\n}\n\nSilkActionSheet(\n    show: show6,\n    props: SilkActionSheetOptions(\n        title: \"标题\"\n    ),\n    content: {_ => content6(this)}\n)"
+    }
+  ]
+}

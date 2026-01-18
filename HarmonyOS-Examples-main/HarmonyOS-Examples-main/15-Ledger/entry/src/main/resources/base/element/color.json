@@ -1,0 +1,25 @@
+{
+  "color": [
+    { "name": "start_window_background",         "value": "#FFFFFF" },
+    { "name": "light_gray",                      "value": "#A8A8A8" },
+    { "name": "light_blue",                      "value": "#66FFFF" },
+
+    { "name": "background_color",                "value": "#F1F3F5" },
+
+    { "name": "supplemental_date_cell_background","value": "#220A59F7" },
+    { "name": "supplemental_date_font_color",    "value": "#22000000" },
+
+    { "name": "scoped_date_cell_background",     "value": "#F6F8FB" },
+    { "name": "scoped_date_font_color",          "value": "#222222" },
+
+    { "name": "selected_date_cell_background",   "value": "#FF015CC8" },
+    { "name": "selected_date_font_color",        "value": "#FFFFFF" },
+
+    { "name": "income",                          "value": "#FF4CB50E" },
+    { "name": "expense",                         "value": "#FFFA7777" },
+
+    { "name": "week_font_color",                 "value": "#666666" },
+    { "name": "middle_background_color",         "value": "#E8EDF5" },
+    { "name": "normal_date_background_color",    "value": "#FF94FAED" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "AI Classify"
+    },
+    {
+      "name": "select_photo_button",
+      "value": "Select Photo"
+    },
+    {
+      "name": "load_model_button",
+      "value": "Load Model"
+    },
+    {
+      "name": "run_model_button",
+      "value": "Run Model"
+    },
+    {
+      "name": "Font_family_black",
+      "value": "black"
+    },
+    {
+      "name": "reason",
+      "value": "Used to initiate network data requests."
+    },
+    {
+      "name": "READ_IMAGEVIDEO_reason",
+      "value": "We need read image for AI classify."
+    },
+    {
+      "name": "READ_MEDIA_reason",
+      "value": "We need read file permission for AI classify."
+    }
+  ]
+}

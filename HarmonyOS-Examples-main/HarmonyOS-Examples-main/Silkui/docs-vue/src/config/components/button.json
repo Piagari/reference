@@ -1,0 +1,53 @@
+{
+  "name": "button",
+  "examples": [
+    {
+      "title": "按钮类型",
+      "description": "按钮支持 `default`、`primary`、`success`、`warning`、`danger` 五种类型，默认为 `default`。",
+      "image": "button/type.png",
+      "code": "// 默认按钮\nSilkButton(props: SilkButtonOptions(text: \"默认按钮\"))\n\n// 主要按钮\nSilkButton(props: SilkButtonOptions(text: \"主要按钮\", buttonType: SilkButtonType.PRIMARY))\n\n// 成功按钮\nSilkButton(props: SilkButtonOptions(text: \"成功按钮\", buttonType: SilkButtonType.SUCCESS))\n\n// 警告按钮\nSilkButton(props: SilkButtonOptions(text: \"警告按钮\", buttonType: SilkButtonType.WARNING))\n\n// 危险按钮\nSilkButton(props: SilkButtonOptions(text: \"危险按钮\", buttonType: SilkButtonType.DANGER))"
+    },
+    {
+      "title": "朴素按钮",
+      "description": "通过 `plain` 属性将按钮设置为朴素按钮，朴素按钮的文字为按钮颜色，背景为白色。",
+      "image": "button/plain.png",
+      "code": "SilkButton(props: SilkButtonOptions(text: \"朴素按钮\", plain: true))\nSilkButton(props: SilkButtonOptions(text: \"主要按钮\", buttonType: SilkButtonType.PRIMARY, plain: true))"
+    },
+    {
+      "title": "按钮尺寸",
+      "description": "支持 `large`、`normal`、`small`、`mini` 四种尺寸，默认为 `normal`。",
+      "image": "button/size.png",
+      "code": "SilkButton(props: SilkButtonOptions(text: \"大号按钮\", size: SilkButtonSize.LARGE))\nSilkButton(props: SilkButtonOptions(text: \"普通按钮\", size: SilkButtonSize.NORMAL))\nSilkButton(props: SilkButtonOptions(text: \"小型按钮\", size: SilkButtonSize.SMALL))\nSilkButton(props: SilkButtonOptions(text: \"迷你按钮\", size: SilkButtonSize.MINI))"
+    },
+    {
+      "title": "自定义颜色",
+      "description": "通过 `color` 属性可以自定义按钮的颜色。",
+      "image": "button/color.png",
+      "code": "SilkButton(props: SilkButtonOptions(text: \"自定义颜色\", color: Color(255, 0, 0, alpha: 1.0)))"
+    },
+    {
+      "title": "加载状态",
+      "description": "通过 `loading` 属性设置按钮为加载状态，加载状态下默认会禁用按钮。",
+      "image": "button/loading.png",
+      "code": "SilkButtonLoading(props: SilkButtonOptions(text: \"加载中...\"), loading: true)"
+    },
+    {
+      "title": "禁用状态",
+      "description": "通过 `disabled` 属性来禁用按钮，禁用状态下按钮不可点击。",
+      "image": "button/disabled.png",
+      "code": "SilkButtonDisabled(props: SilkButtonOptions(text: \"禁用状态\"), disabled: true)"
+    },
+    {
+      "title": "按钮形状",
+      "description": "通过 `square` 设置方形按钮，通过 `round` 设置圆形按钮。",
+      "image": "button/shape.png",
+      "code": "SilkButton(props: SilkButtonOptions(text: \"方形按钮\", square: true))\nSilkButton(props: SilkButtonOptions(text: \"圆形按钮\", round: true))"
+    },
+    {
+      "title": "图标按钮",
+      "description": "通过 `icon` 属性设置按钮图标，通过 `iconPosition` 属性设置图标位置。",
+      "image": "button/icon.png",
+      "code": "SilkButton(props: SilkButtonOptions(text: \"图标按钮\", icon: \"plus\"))\nSilkButton(props: SilkButtonOptions(text: \"图标按钮\", icon: \"plus\", iconPosition: SilkButtonIconPosition.RIGHT))"
+    }
+  ]
+}

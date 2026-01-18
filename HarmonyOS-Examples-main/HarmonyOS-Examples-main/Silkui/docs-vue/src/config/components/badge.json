@@ -1,0 +1,41 @@
+{
+  "name": "badge",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "设置 `content` 属性后，Badge 会在子元素的右上角显示对应的徽标，也可以通过 `dot` 来显示小红点。",
+      "image": "badge/basic.png",
+      "code": "SilkBadge(\n    props: SilkBadgeOptions(\n    content: \"5\"\n),\nChildren: Children,\nhasChildren: true,\nhasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n    content: \"10\"\n),\nChildren: Children,\nhasChildren: true,\nhasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n    content: \"Hot\"\n),\nChildren: Children,\nhasChildren: true,\nhasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n    content: \"5\",\ndot: true\n),\nChildren: Children,\nhasChildren: true,\nhasContent: false\n)"
+    },
+    {
+      "title": "最大值",
+      "description": "设置 `max` 属性后，当数值超过最大值时，会显示 `{max}+`。",
+      "image": "badge/max.png",
+      "code": "SilkBadge(\n    props: SilkBadgeOptions(\n        content: \"10\",\n    max: 9\n    ),\n    Children: Children,\n    hasChildren: true,\n    hasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n        content: \"21\",\n    max: 20\n    ),\n    Children: Children,\n    hasChildren: true,\n    hasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n        content: \"100\",\n    max: 99\n    ),\n    Children: Children,\n    hasChildren: true,\n    hasContent: false\n)"
+    },
+    {
+      "title": "自定义颜色",
+      "description": "通过 `color` 和 `backgroundColor` 属性设置徽标的颜色。",
+      "image": "badge/color.png",
+      "code": "SilkBadge(\n    props: SilkBadgeOptions(\n        content: \"5\",\n        backgroundColor: Color(0xff1989fa)\n    ),\n    Children: Children,\n    hasChildren: true,\n    hasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n        content: \"10\",\n        backgroundColor: Color(0xff1989fa)\n    ),\n    Children: Children,\n    hasChildren: true,\n    hasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n        dot: true,\n        backgroundColor: Color(0xff1989fa)\n    ),\n    Children: Children,\n    hasChildren: true,\n    hasContent: false\n)"
+    },
+    {
+      "title": "自定义徽标内容",
+      "description": "可以通过 `Content` 插槽自定义徽标的内容。",
+      "image": "badge/icon.png",
+      "code": "SilkBadge(\n    props: SilkBadgeOptions(),\n    Content: C1,\n    Children: Children,\n    hasChildren: true,\n    hasContent: true\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(),\n    Content: C2,\n    Children: Children,\n    hasChildren: true,\n    hasContent: true\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(),\n    Content: C3,\n    Children: Children,\n    hasChildren: true,\n    hasContent: true\n)"
+    },
+    {
+      "title": "自定义位置",
+      "description": "通过 `position` 属性设置徽标的位置，支持 `TOP_LEFT`、`TOP_RIGHT`、`BOTTOM_LEFT`、`BOTTOM_RIGHT` 四个位置。",
+      "image": "badge/position.png",
+      "code": "SilkBadge(\n    props: SilkBadgeOptions(\n        content: \"10\",\n        position: SilkBadgePosition.TOP_LEFT\n    ),\n    Children: Children,\n    hasChildren: true,\n    hasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n        content: \"10\",\n        position: SilkBadgePosition.BOTTOM_LEFT\n    ),\n    Children: Children,\n    hasChildren: true,\n    hasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n        content: \"10\",\n        position: SilkBadgePosition.BOTTOM_RIGHT\n    ),\n    Children: Children,\n    hasChildren: true,\n    hasContent: false\n)"
+    },
+    {
+      "title": "独立展示",
+      "description": "徽标可独立展示",
+      "image": "badge/only.png",
+      "code": "SilkBadge(\n    props: SilkBadgeOptions(\n        content: \"20\",\n    ),\n    hasChildren: false,\n    hasContent: false\n)\n\nSilkBadge(\n    props: SilkBadgeOptions(\n        content: \"100\",\n        max: 99\n    ),\n    hasChildren: false,\n    hasContent: false\n)"
+    }
+  ]
+}

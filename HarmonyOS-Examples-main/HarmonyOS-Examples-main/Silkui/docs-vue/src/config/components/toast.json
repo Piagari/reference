@@ -1,0 +1,35 @@
+{
+  "name": "toast",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "通过 `SilkToast.toast` 方法可以显示文字提示。",
+      "image": "toast/basic.gif",
+      "code": "// 简单文字提示\nSilkToast.toast(\"提示内容\")\nSilkToast.loading(@r(app.string.test_toast))\nSilkToast.success(\"成功文案\")\nSilkToast.error(\"失败文案\")"
+    },
+    {
+      "title": "自定义图标",
+      "description": "通过 `icon` 属性可以自定义图标。",
+      "image": "toast/custom.gif",
+      "code": "SilkToast.toast(SilkToastOptions(message: \"自定义图标\", icon: @r(app.media.like_o)))\nSilkCell(\n    props: SilkCellOptions(title: \"自定义图片\", isLink: true),\n    click: { e => SilkToast.toast(SilkToastOptions(message: \"自定义图标\", icon: \"https://fastly.jsdelivr.net/npm/@vant/assets/logo.png\"))}\n)\nSilkToast.loading(SilkToastOptions(message: \"加载中...\", loadingType: SilkLoadingType.SPINNER))"
+    },
+    {
+      "title": "自定义位置",
+      "description": "通过 `showPosition` 属性可以自定义轻提示的显示位置。",
+      "image": "toast/position.gif",
+      "code": "SilkToast.toast(SilkToastOptions(message: \"自定义图标\", showPosition: SilkToastPosition.TOP))\n\nSilkToast.toast(SilkToastOptions(message: \"自定义图标\", showPosition: SilkToastPosition.BOTTOM))"
+    },
+    {
+      "title": "加载提示",
+      "description": "执行 Toast 方法时会返回对应的 Toast控制器 实例，通过调用实例上的 setMessage 方法可以实现动态更新提示的效果。",
+      "image": "toast/loading.gif",
+      "code": "let toast = SilkToast.loading(\n    SilkToastOptions(\n        duration: 0,\n        forbidClick: true,\n        message: \"倒计时 3 秒\"\n    )\n);\n\nspawn {\n    =>\n    var second = 3;\n    while (second > 0) {\n        sleep(1 * Duration.second);\n        second--;\n        if (second > 0) {\n            toast.setMessage?(\"倒计时 ${second.toString()} 秒\")\n        } else {\n            SilkToast.closeToast()\n        }\n    }\n}"
+    },
+    {
+      "title": "组件式调用",
+      "description": "除了函数式调用外，还可以使用组件式调用。",
+      "image": "toast/comp.gif",
+      "code": "@State\nvar show: Bool = false\n\nSilkToastComponent(show: show, Content: CusContentImage,\nstyle: SilkToastStyle(padding: SilkUIPaddingOptions(0.vp)), hasContent: true)\n\n// 显示提示\nshow = true"
+    }
+  ]
+}

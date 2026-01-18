@@ -1,0 +1,80 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "wenyin"
+    },
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "share",
+      "value": "分享"
+    },
+    {
+      "name": "focus",
+      "value": "关注"
+    },
+    {
+      "name": "recommend",
+      "value": "推荐"
+    },
+    {
+      "name": "winnow",
+      "value": "精选"
+    },
+    {
+      "name": "playlet",
+      "value": "短剧"
+    },
+    {
+      "name": "address",
+      "value": "广州"
+    },
+    {
+      "name": "children",
+      "value": "少儿"
+    },
+    {
+      "name": "exp",
+      "value": "经验"
+    },
+    {
+      "name": "free_tv",
+      "value": "免费看剧"
+    },
+    {
+      "name": "game",
+      "value": "游戏"
+    },
+    {
+      "name": "live",
+      "value": "直播"
+    },
+    {
+      "name": "home",
+      "value": "首页"
+    },
+    {
+      "name": "friend",
+      "value": "朋友"
+    },
+    {
+      "name": "message",
+      "value": "消息"
+    },
+    {
+      "name": "my",
+      "value": "我"
+    }
+  ]
+}

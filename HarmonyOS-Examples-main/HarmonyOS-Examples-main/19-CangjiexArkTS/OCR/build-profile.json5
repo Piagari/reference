@@ -1,0 +1,52 @@
+{
+  "app": {
+    "signingConfigs": [
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.3(15)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          },
+          "cangjieOptions": {
+            // 仓颉相关配置
+            "path": "./src/main/cangjie/cjpm.toml",
+            // cjpm配置文件路径，提供仓颉构建配置
+            "abiFilters": [
+              "arm64-v8a",
+              "x86_64"
+            ]
+            // 自定义仓颉编译架构，默认编译架构为arm64-v8a
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ],
+    }
+  ]
+}

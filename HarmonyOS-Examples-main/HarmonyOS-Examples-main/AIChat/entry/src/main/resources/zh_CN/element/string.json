@@ -1,0 +1,92 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "AIChat"
+    },
+    {
+      "name": "reason",
+      "value": "Used to initiate network data requests."
+    },
+    {
+      "name": "send",
+      "value": "发送"
+    },
+    {
+      "name": "configure",
+      "value": "配置"
+    },
+    {
+      "name": "chat",
+      "value": "聊天"
+    },
+    {
+      "name": "new_chat",
+      "value": "新的聊天"
+    },
+    {
+      "name": "message_count",
+      "value": "条对话"
+    },
+    {
+      "name": "model",
+      "value": "模型"
+    },
+    {
+      "name": "api_key",
+      "value": "API密钥"
+    },
+    {
+      "name": "base_url",
+      "value": "接口链接"
+    },
+    {
+      "name": "system_prompt",
+      "value": "系统提示词"
+    },
+    {
+      "name": "chat_timeout",
+      "value": "对话超时时间（秒）"
+    },
+    {
+      "name": "setting",
+      "value": "设置"
+    },
+    {
+      "name": "back",
+      "value": "返回"
+    },
+    {
+      "name": "save",
+      "value": "保存"
+    },
+    {
+      "name": "model_generator_configure",
+      "value": "模型生成配置"
+    },
+    {
+      "name": "max_tokens",
+      "value": "最大生成token数量"
+    },
+    {
+      "name": "temperature",
+      "value": "温度"
+    },
+    {
+      "name": "top_p",
+      "value": "top_p"
+    },
+    {
+      "name": "stream",
+      "value": "是否开启流式对话"
+    }
+  ]
+}

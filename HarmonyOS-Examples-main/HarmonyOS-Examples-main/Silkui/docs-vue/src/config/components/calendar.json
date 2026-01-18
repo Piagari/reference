@@ -1,0 +1,217 @@
+{
+  "name": "Calendar 日历",
+  "desc": "日历组件用于选择日期或日期区间，支持单选、多选、范围选择等模式。",
+  "guide": {
+    "import": "import { SilkCalendar } from 'silkui';"
+  },
+  "demo": {
+    "basic": {
+      "title": "基础用法",
+      "desc": "日历组件默认采用单选模式，可以通过 `show` 方法显示日历。",
+      "code": "```html\n<template>\n  <div>\n    <silk-button type=\"primary\" @click=\"showCalendar\">显示日历</silk-button>\n    <silk-calendar\n      v-model:visible=\"visible\"\n      @confirm=\"onConfirm\"\n      @cancel=\"onCancel\"\n    />\n  </div>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\n\nconst visible = ref(false);\n\nconst showCalendar = () => {\n  visible.value = true;\n};\n\nconst onConfirm = (date) => {\n  visible.value = false;\n  if (date) {\n    console.log('选择的日期：', date);\n  }\n};\n\nconst onCancel = () => {\n  visible.value = false;\n};\n</script>\n```"
+    },
+    "multiple": {
+      "title": "选择多个日期",
+      "desc": "将 `type` 设置为 `multiple` 来开启多选模式，此时 `confirm` 事件返回的 `dates` 为数组结构，数组包含了所有选中的日期。",
+      "code": "```html\n<template>\n  <div>\n    <silk-button type=\"primary\" @click=\"showCalendar\">选择多个日期</silk-button>\n    <silk-calendar\n      v-model:visible=\"visible\"\n      type=\"multiple\"\n      @confirm=\"onConfirm\"\n      @cancel=\"onCancel\"\n    />\n  </div>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\n\nconst visible = ref(false);\n\nconst showCalendar = () => {\n  visible.value = true;\n};\n\nconst onConfirm = (_, dates) => {\n  visible.value = false;\n  console.log('选择了', dates.length, '个日期');\n};\n\nconst onCancel = () => {\n  visible.value = false;\n};\n</script>\n```"
+    },
+    "range": {
+      "title": "选择日期区间",
+      "desc": "将 `type` 设置为 `range` 来开启范围选择模式，此时 `confirm` 事件返回的 `range` 为数组结构，数组第一项为开始时间，第二项为结束时间。",
+      "code": "```html\n<template>\n  <div>\n    <silk-button type=\"primary\" @click=\"showCalendar\">选择日期区间</silk-button>\n    <silk-calendar\n      v-model:visible=\"visible\"\n      type=\"range\"\n      @confirm=\"onConfirm\"\n      @cancel=\"onCancel\"\n    />\n  </div>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\n\nconst visible = ref(false);\n\nconst showCalendar = () => {\n  visible.value = true;\n};\n\nconst onConfirm = (_, __, range) => {\n  visible.value = false;\n  if (range) {\n    const [start, end] = range;\n    console.log('选择的日期区间：', start, '至', end);\n  }\n};\n\nconst onCancel = () => {\n  visible.value = false;\n};\n</script>\n```"
+    },
+    "quick": {
+      "title": "快捷选择",
+      "desc": "将 `close-on-click-day` 设置为 `true` 可以在点击日期时立即关闭日历并触发 `confirm` 事件。",
+      "code": "```html\n<template>\n  <div>\n    <silk-button type=\"primary\" @click=\"showCalendar\">快捷选择</silk-button>\n    <silk-calendar\n      v-model:visible=\"visible\"\n      :close-on-click-day=\"true\"\n      @confirm=\"onConfirm\"\n      @cancel=\"onCancel\"\n    />\n  </div>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\n\nconst visible = ref(false);\n\nconst showCalendar = () => {\n  visible.value = true;\n};\n\nconst onConfirm = (date) => {\n  if (date) {\n    console.log('选择的日期：', date);\n  }\n};\n\nconst onCancel = () => {\n  visible.value = false;\n};\n</script>\n```"
+    },
+    "custom-color": {
+      "title": "自定义颜色",
+      "desc": "通过 `color` 属性可以自定义日历的主题色。",
+      "code": "```html\n<template>\n  <div>\n    <silk-button type=\"primary\" @click=\"showCalendar\">自定义颜色</silk-button>\n    <silk-calendar\n      v-model:visible=\"visible\"\n      color=\"#07c160\"\n      @confirm=\"onConfirm\"\n      @cancel=\"onCancel\"\n    />\n  </div>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\n\nconst visible = ref(false);\n\nconst showCalendar = () => {\n  visible.value = true;\n};\n\nconst onConfirm = (date) => {\n  visible.value = false;\n  if (date) {\n    console.log('选择的日期：', date);\n  }\n};\n\nconst onCancel = () => {\n  visible.value = false;\n};\n</script>\n```"
+    },
+    "custom-range": {
+      "title": "自定义日期范围",
+      "desc": "通过 `min-date` 和 `max-date` 定义日历的范围。",
+      "code": "```html\n<template>\n  <div>\n    <silk-button type=\"primary\" @click=\"showCalendar\">自定义日期范围</silk-button>\n    <silk-calendar\n      v-model:visible=\"visible\"\n      :min-date=\"minDate\"\n      :max-date=\"maxDate\"\n      @confirm=\"onConfirm\"\n      @cancel=\"onCancel\"\n    />\n  </div>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\n\nconst visible = ref(false);\nconst minDate = new Date();\nconst maxDate = new Date(new Date().getTime() + 90 * 24 * 60 * 60 * 1000); // 当前日期的三个月后\n\nconst showCalendar = () => {\n  visible.value = true;\n};\n\nconst onConfirm = (date) => {\n  visible.value = false;\n  if (date) {\n    console.log('选择的日期：', date);\n  }\n};\n\nconst onCancel = () => {\n  visible.value = false;\n};\n</script>\n```"
+    },
+    "month-mode": {
+      "title": "月份切换模式",
+      "desc": "将 `mode` 设置为 `month` 来开启月份切换模式，此时可以通过点击左右箭头切换月份。",
+      "code": "```html\n<template>\n  <div>\n    <silk-button type=\"primary\" @click=\"showCalendar\">月份切换模式</silk-button>\n    <p>当前月份: {{ currentMonth }}</p>\n    <silk-calendar\n      v-model:visible=\"visible\"\n      mode=\"month\"\n      @month-change=\"onMonthChange\"\n      @confirm=\"onConfirm\"\n      @cancel=\"onCancel\"\n    />\n  </div>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\n\nconst visible = ref(false);\nconst currentMonth = ref('当前月份');\n\nconst showCalendar = () => {\n  visible.value = true;\n};\n\nconst onMonthChange = (month) => {\n  currentMonth.value = `${month.getFullYear()}年${month.getMonth() + 1}月`;\n};\n\nconst onConfirm = (date) => {\n  visible.value = false;\n  if (date) {\n    console.log('选择的日期：', date);\n  }\n};\n\nconst onCancel = () => {\n  visible.value = false;\n};\n</script>\n```"
+    },
+    "year-month-mode": {
+      "title": "年月切换模式",
+      "desc": "将 `mode` 设置为 `year-month` 来开启年月切换模式，此时可以同时切换年份和月份。",
+      "code": "```html\n<template>\n  <div>\n    <silk-button type=\"primary\" @click=\"showCalendar\">年月切换模式</silk-button>\n    <p>当前年月: {{ currentMonth }}</p>\n    <silk-calendar\n      v-model:visible=\"visible\"\n      mode=\"year-month\"\n      @month-change=\"onMonthChange\"\n      @confirm=\"onConfirm\"\n      @cancel=\"onCancel\"\n    />\n  </div>\n</template>\n\n<script setup>\nimport { ref } from 'vue';\n\nconst visible = ref(false);\nconst currentMonth = ref('当前年月');\n\nconst showCalendar = () => {\n  visible.value = true;\n};\n\nconst onMonthChange = (month) => {\n  currentMonth.value = `${month.getFullYear()}年${month.getMonth() + 1}月`;\n};\n\nconst onConfirm = (date) => {\n  visible.value = false;\n  if (date) {\n    console.log('选择的日期：', date);\n  }\n};\n\nconst onCancel = () => {\n  visible.value = false;\n};\n</script>\n```"
+    }
+  },
+  "api": {
+    "props": [
+      {
+        "name": "type",
+        "desc": "选择类型，可选值为 `single`、`multiple`、`range`",
+        "type": "string",
+        "default": "single"
+      },
+      {
+        "name": "title",
+        "desc": "日历标题",
+        "type": "string",
+        "default": "日期选择"
+      },
+      {
+        "name": "color",
+        "desc": "主题色，对选中日期生效",
+        "type": "string",
+        "default": "#1989fa"
+      },
+      {
+        "name": "min-date",
+        "desc": "可选择的最小日期",
+        "type": "Date",
+        "default": "当前日期"
+      },
+      {
+        "name": "max-date",
+        "desc": "可选择的最大日期",
+        "type": "Date",
+        "default": "当前日期的六个月后"
+      },
+      {
+        "name": "default-date",
+        "desc": "默认选中的日期，`type` 为 `single` 时生效",
+        "type": "Date",
+        "default": "今天"
+      },
+      {
+        "name": "default-dates",
+        "desc": "默认选中的日期数组，`type` 为 `multiple` 时生效",
+        "type": "Date[]",
+        "default": "[]"
+      },
+      {
+        "name": "default-date-range",
+        "desc": "默认选中的日期范围，`type` 为 `range` 时生效",
+        "type": "[Date, Date]",
+        "default": "[]"
+      },
+      {
+        "name": "row-height",
+        "desc": "日期行高",
+        "type": "number | string",
+        "default": "64"
+      },
+      {
+        "name": "formatter",
+        "desc": "日期格式化函数",
+        "type": "(day: Day) => Day",
+        "default": "-"
+      },
+      {
+        "name": "allow-same-day",
+        "desc": "是否允许日期范围选择时选择同一天",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "show-mark",
+        "desc": "是否显示月份背景水印",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "name": "show-title",
+        "desc": "是否展示日历标题",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "name": "show-subtitle",
+        "desc": "是否展示日历副标题",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "name": "show-confirm",
+        "desc": "是否展示确认按钮",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "name": "readonly",
+        "desc": "是否为只读状态，只读状态下不能选择日期",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "confirm-text",
+        "desc": "确认按钮的文字",
+        "type": "string",
+        "default": "确定"
+      },
+      {
+        "name": "confirm-disabled-text",
+        "desc": "确认按钮处于禁用状态时的文字",
+        "type": "string",
+        "default": "确定"
+      },
+      {
+        "name": "first-day-of-week",
+        "desc": "设置周起始日，0 表示周日，1 表示周一",
+        "type": "number",
+        "default": "0"
+      },
+      {
+        "name": "mode",
+        "desc": "日历切换模式，可选值为 `none`、`month`、`year-month`",
+        "type": "string",
+        "default": "none"
+      }
+    ],
+    "events": [
+      {
+        "name": "select",
+        "desc": "点击并选中任意日期时触发",
+        "args": "[date: Date]"
+      },
+      {
+        "name": "confirm",
+        "desc": "日期选择完成后触发，若 `show-confirm` 为 `true`，则点击确认按钮后触发",
+        "args": "[date: Date | null, dates: Date[], range: [Date, Date] | null]"
+      },
+      {
+        "name": "cancel",
+        "desc": "点击关闭按钮时触发",
+        "args": "[]"
+      },
+      {
+        "name": "month-change",
+        "desc": "切换月份时触发",
+        "args": "[month: Date]"
+      }
+    ],
+    "slots": [
+      {
+        "name": "title",
+        "desc": "自定义标题"
+      },
+      {
+        "name": "footer",
+        "desc": "自定义底部区域内容"
+      }
+    ],
+    "methods": [
+      {
+        "name": "reset",
+        "desc": "重置选中的日期到默认值",
+        "args": "[]"
+      },
+      {
+        "name": "scrollToDate",
+        "desc": "滚动到某个日期所在的月份",
+        "args": "[date: Date]"
+      }
+    ]
+  }
+}

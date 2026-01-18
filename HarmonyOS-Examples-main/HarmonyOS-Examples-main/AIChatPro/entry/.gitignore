@@ -1,0 +1,10 @@
+/node_modules
+/oh_modules
+/.preview
+/build
+/.cxx
+/.test
+./src/main/cangjie/*.so
+./src/main/resources/rawfile/*.json
+./src/main/resources/rawfile/*.om
+./src/main/cangjie/*.msw

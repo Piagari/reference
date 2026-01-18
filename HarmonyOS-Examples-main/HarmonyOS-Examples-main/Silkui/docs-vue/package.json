@@ -1,0 +1,25 @@
+{
+  "name": "silkui-docs",
+  "version": "1.0.0",
+  "description": "SilkUI 组件库文档网站",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "copy-markdown": "node scripts/copy-markdown.js",
+    "dev": "node scripts/copy-markdown.js && vite",
+    "build": "node scripts/copy-markdown.js && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "markdown-it": "^13.0.1",
+    "highlight.js": "^11.8.0",
+    "prismjs": "^1.29.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5",
+    "sass": "^1.66.1"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "seat_best_fill",
+      "value": "#FEFCFD"
+    },
+    {
+      "name": "seat_good_fill",
+      "value": "#FAFFFF"
+    },
+    {
+      "name": "seat_sold_fill",
+      "value": "#C60000"
+    },
+    {
+      "name": "seat_selected_fill",
+      "value": "#00965C"
+    },
+    {
+      "name": "seat_cheap_fill",
+      "value": "#FFFEFA"
+    },
+    {
+      "name": "seat_best_stroke",
+      "value": "#FC2C54"
+    },
+    {
+      "name": "seat_good_stroke",
+      "value": "#1872F8"
+    },
+    {
+      "name": "seat_sold_stroke",
+      "value": "#C60000"
+    },
+    {
+      "name": "seat_selected_stroke",
+      "value": "#00965C"
+    },
+    {
+      "name": "seat_cheap_stroke",
+      "value": "#FF9400"
+    }
+  ]
+}

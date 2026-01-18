@@ -1,0 +1,47 @@
+{
+  "name": "loading",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "Loading 组件支持两种类型的加载图标。",
+      "image": "loading/loading.gif",
+      "code": "SilkLoading()\nSilkLoading(loadingType: SilkLoadingType.SPINNER)"
+    },
+    {
+      "title": "自定义颜色",
+      "description": "通过 `color` 属性可以自定义加载图标的颜色。",
+      "image": "loading/color.png",
+      "code": "SilkLoading(color: @r(app.color.primary_color))\nSilkLoading(loadingType: SilkLoadingType.SPINNER, color: @r(app.color.primary_color))"
+    },
+    {
+      "title": "自定义大小",
+      "description": "通过 `size` 属性可以自定义加载图标的大小。",
+      "image": "loading/size.png",
+      "code": "SilkLoading(size: 24.vp)\nSilkLoading(loadingType: SilkLoadingType.SPINNER, size: 24.vp)"
+    },
+    {
+      "title": "加载文案",
+      "description": "通过 `text` 属性可以设置加载文案。",
+      "image": "loading/text.png",
+      "code": "SilkLoading(size: 24.vp, text: \"加载中...\")"
+    },
+    {
+      "title": "垂直排列",
+      "description": "通过 `vertical` 属性可以设置图标和文字垂直排列。",
+      "image": "loading/vertical.png",
+      "code": "SilkLoading(size: 24.vp, text: \"加载中...\", vertical: true)"
+    },
+    {
+      "title": "自定义文字样式",
+      "description": "通过 `textSize` 和 `textColor` 属性可以自定义文字的大小和颜色。",
+      "image": "loading/text-style.png",
+      "code": "SilkLoading(color: @r(app.color.base_color), text: \"加载中...\", vertical: true)\nSilkLoading(text: \"加载中...\", vertical: true, textColor: @r(app.color.base_color))"
+    },
+    {
+      "title": "自定义图标",
+      "description": "通过 `icon` 属性可以使用自定义图标替代默认的加载图标。",
+      "image": "loading/custom-icon.png",
+      "code": "SilkLoading(size: 24.vp, text: \"加载中...\", vertical: true, icon: @r(app.media.star_o))"
+    }
+  ]
+}

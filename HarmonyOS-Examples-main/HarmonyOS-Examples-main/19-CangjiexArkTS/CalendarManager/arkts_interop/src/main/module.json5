@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "arkts_interop",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

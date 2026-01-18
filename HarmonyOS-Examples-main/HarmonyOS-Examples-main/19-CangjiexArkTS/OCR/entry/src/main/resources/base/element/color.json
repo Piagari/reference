@@ -1,0 +1,25 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "input_box_border",
+      "value": "#D4D4D4"
+    },
+    {
+      "name": "item_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text_color",
+      "value": "#171717"
+    },
+    {
+      "name": "input_box",
+      "value": "#F5F5F5"
+    }
+  ]
+}
+

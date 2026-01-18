@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "SlowFeetAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "SlowFeetAbility_label",
+      "value": "label"
+    }
+  ]
+}

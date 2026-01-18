@@ -1,0 +1,26 @@
+<!--
+  - /*
+  -  * Copyright (c) 2025 Huawei Device Co., Ltd.
+  -  * Licensed under the Apache License, Version 2.0 (the ""License"");
+  -  * you may not use this file except in compliance with the License.
+  -  * You may obtain a copy of the License at
+  -  *
+  -  *     http://www.apache.org/licenses/LICENSE-2.0
+  -  *
+  -  * Unless required by applicable law or agreed to in writing, software
+  -  * distributed under the License is distributed on an ""AS IS"" BASIS,
+  -  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  -  * See the License for the specific language governing permissions and
+  -  * limitations under the License.
+  -  */
+  -
+  -->
+
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<rect id="common_knowledge_fill" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<path id="路径" d="M17 2C18.65 2 20 3.34 20 5L20 19C20 20.65 18.65 22 17 22L7 22C5.34 22 4 20.65 4 19L4 5C4 3.34 5.34 2 7 2L13.99 2L14 9.1C14 9.55 14.34 9.93 14.78 9.99L14.9 10C15.35 10 15.73 9.65 15.79 9.21L15.8 9.1L15.79 2L17 2Z" fill="#000000" fill-opacity="0.400000" fill-rule="evenodd"/>
+</svg>

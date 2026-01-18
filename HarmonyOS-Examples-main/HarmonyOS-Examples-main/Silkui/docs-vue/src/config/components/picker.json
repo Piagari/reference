@@ -1,0 +1,53 @@
+{
+  "name": "picker",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "选择器组件用于从一组选项中选择一个值。现在支持更好的触摸交互和3D视觉效果。",
+      "image": "picker/basic.png",
+      "code": "let options = [\n    SilkPickerOption(text: \"杭州\", value: \"Hangzhou\"),\n    SilkPickerOption(text: \"宁波\", value: \"Ningbo\"),\n    SilkPickerOption(text: \"温州\", value: \"Wenzhou\"),\n    SilkPickerOption(text: \"绍兴\", value: \"Shaoxing\"),\n    SilkPickerOption(text: \"湖州\", value: \"Huzhou\")\n]\n\nlet columns = [SilkPickerColumn(options)]\n\nSilkPicker(\n    columns: ObservedArrayList(columns),\n    options: SilkPickerOptions(),\n    confirm: { values, indexes =>\n        SilkToast.toast(\"选择了: ${values.toString()}\")\n    }\n)"
+    },
+    {
+      "title": "多列选择",
+      "description": "通过传入多个 `SilkPickerColumn` 实现多列选择，支持工作日时间段选择等场景。",
+      "image": "picker/multi-column.png",
+      "code": "let columns = [\n    SilkPickerColumn([\n        SilkPickerOption(text: \"周一\", value: \"Monday\"),\n        SilkPickerOption(text: \"周二\", value: \"Tuesday\"),\n        SilkPickerOption(text: \"周三\", value: \"Wednesday\"),\n        SilkPickerOption(text: \"周四\", value: \"Thursday\"),\n        SilkPickerOption(text: \"周五\", value: \"Friday\")\n    ]),\n    SilkPickerColumn([\n        SilkPickerOption(text: \"上午\", value: \"Morning\"),\n        SilkPickerOption(text: \"下午\", value: \"Afternoon\"),\n        SilkPickerOption(text: \"晚上\", value: \"Evening\")\n    ])\n]\n\nSilkPicker(\n    columns: ObservedArrayList(columns),\n    options: SilkPickerOptions(title: \"选择时间\")\n)"
+    },
+    {
+      "title": "级联选择",
+      "description": "支持省市区级联选择，组件会自动检测数据结构并构建级联关系。",
+      "image": "picker/cascade.png",
+      "code": "let cascadeOptions = [\n    SilkPickerOption(\n        text: \"浙江\",\n        value: \"Zhejiang\",\n        children: [\n            SilkPickerOption(\n                text: \"杭州\",\n                value: \"Hangzhou\",\n                children: [\n                    SilkPickerOption(text: \"西湖区\", value: \"Xihu\"),\n                    SilkPickerOption(text: \"余杭区\", value: \"Yuhang\")\n                ]\n            ),\n            SilkPickerOption(\n                text: \"温州\",\n                value: \"Wenzhou\",\n                children: [\n                    SilkPickerOption(text: \"鹿城区\", value: \"Lucheng\"),\n                    SilkPickerOption(text: \"瓯海区\", value: \"Ouhai\")\n                ]\n            )\n        ]\n    )\n]\n\nlet columns = [SilkPickerColumn(cascadeOptions)]\n\nSilkPicker(\n    columns: ObservedArrayList(columns),\n    options: SilkPickerOptions(title: \"选择地区\")\n)"
+    },
+    {
+      "title": "禁用选项",
+      "description": "通过设置 `SilkPickerOption` 的 `disabled` 属性可以禁用特定选项，组件会自动跳过禁用选项。",
+      "image": "picker/disabled.png",
+      "code": "let options = [\n    SilkPickerOption(text: \"杭州\", value: \"Hangzhou\", disabled: true),\n    SilkPickerOption(text: \"宁波\", value: \"Ningbo\"),\n    SilkPickerOption(text: \"温州\", value: \"Wenzhou\")\n]\n\nlet columns = [SilkPickerColumn(options)]\n\nSilkPicker(\n    columns: ObservedArrayList(columns),\n    options: SilkPickerOptions()\n)"
+    },
+    {
+      "title": "搭配弹出层使用",
+      "description": "Picker 通常与 Popup 弹出层组件搭配使用，实现底部弹起的选择器效果。",
+      "image": "picker/popup.png",
+      "code": "@State var showPicker: Bool = false\n\nSilkCell(\n    props: SilkCellOptions(title: \"选择城市\", value: \"内容\", isLink: true)\n).onClick { \n    showPicker = true \n}\n\nSilkPopup(\n    show: showPicker,\n    props: SilkPopupOptions(position: SilkPopupPosition.BOTTOM, round: true)\n) {\n    SilkPicker(\n        columns: ObservedArrayList(columns),\n        options: SilkPickerOptions(title: \"选择城市\"),\n        confirm: { values, indexes => \n            showPicker = false\n            // 处理选择结果\n        },\n        cancel: { => showPicker = false }\n    )\n}"
+    },
+    {
+      "title": "双向绑定",
+      "description": "使用 `SilkPickerLink` 组件实现数据的双向绑定，选择结果会自动同步到绑定的变量。",
+      "image": "picker/link.png",
+      "code": "@State var selectedValues: ObservedArrayList<String> = ObservedArrayList([])\n\nSilkPickerLink(\n    values: selectedValues,\n    columns: ObservedArrayList(columns),\n    options: SilkPickerOptions()\n)\n\n// selectedValues会自动更新为选中的值"
+    },
+    {
+      "title": "加载状态",
+      "description": "通过 `loading` 属性设置选择器为加载状态，支持响应式更新。",
+      "image": "picker/loading.png",
+      "code": "@State var pickerOptions = SilkPickerOptions()\n\n// 显示加载状态\npickerOptions.loading = true\n\nSilkPicker(\n    columns: ObservedArrayList(columns),\n    options: pickerOptions\n)\n\n// 加载完成后隐藏\npickerOptions.loading = false"
+    },
+    {
+      "title": "自定义配置",
+      "description": "通过 `SilkPickerOptions` 可以自定义选择器的各种配置，包括标题、按钮文字、选项高度等。",
+      "image": "picker/custom.png",
+      "code": "SilkPicker(\n    columns: ObservedArrayList(columns),\n    options: SilkPickerOptions(\n        title: \"请选择\",\n        confirmButtonText: \"确定\",\n        cancelButtonText: \"取消\",\n        itemHeight: 50.vp,\n        visibleItemCount: 5,\n        toolbarPosition: false,  // 工具栏在底部\n        readonly: false\n    ),\n    confirm: { values, indexes =>\n        // 确认回调\n    },\n    cancel: { =>\n        // 取消回调\n    },\n    change: { values, indexes, columnIndex =>\n        // 选项变化回调\n    }\n)"
+    }
+  ]
+}

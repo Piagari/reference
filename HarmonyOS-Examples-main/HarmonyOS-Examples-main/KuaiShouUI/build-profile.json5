@@ -1,0 +1,54 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\cxy\\.ohos\\config\\default_KuaiShouUI_jmXLJpK5ZBgDffgibCwGJy3Q2EL9jd-vkhWm7MIEYVQ=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B7AA995F0F04E331FAA53C4F6B86FC7F103AB4656674DFDDA775E208CFD2A6292169D162C548600",
+          "profile": "C:\\Users\\cxy\\.ohos\\config\\default_KuaiShouUI_jmXLJpK5ZBgDffgibCwGJy3Q2EL9jd-vkhWm7MIEYVQ=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\cxy\\.ohos\\config\\default_KuaiShouUI_jmXLJpK5ZBgDffgibCwGJy3Q2EL9jd-vkhWm7MIEYVQ=.p12",
+          "storePassword": "0000001B4809B2028E53B7FF5E681D06383D668127B244AE41C404C2E225905A9CC1B4E19306FD81318E83"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "SlowFeet",
+      "srcPath": "./SlowFeet",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

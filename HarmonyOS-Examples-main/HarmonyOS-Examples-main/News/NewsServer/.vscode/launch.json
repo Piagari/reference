@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cangjie (CJNative): launch",
+            "program": "d:\\ProgramWorkspace\\CangjieWorkspace\\Project07\\Task02\\target\\debug\\bin\\main.exe",
+            "request": "launch",
+            "type": "cangjieDebug",
+            "externalConsole": false,
+            "buildBeforeLaunch": true,
+            "env": {
+                "PATH": "C:\\Cangjie\\runtime\\lib\\windows_x86_64_llvm"
+            },
+            "debugMacro": false
+        }
+    ]
+}

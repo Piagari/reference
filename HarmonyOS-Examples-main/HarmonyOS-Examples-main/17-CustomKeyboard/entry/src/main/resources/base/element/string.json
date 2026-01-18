@@ -1,0 +1,117 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "CustomKeyboard"
+    },
+    {
+      "name": "text_info",
+      "value": "缴费信息"
+    },
+    {
+      "name": "power_type",
+      "value": "动力类型"
+    },
+    {
+      "name": "power_type_gas",
+      "value": "汽油"
+    },
+    {
+      "name": "power_type_diesel",
+      "value": "柴油"
+    },
+    {
+      "name": "power_type_hybrid",
+      "value": "油电混动"
+    },
+    {
+      "name": "power_type_Electricity",
+      "value": "纯电动"
+    },
+    {
+      "name": "power_type_extend",
+      "value": "插混/增程"
+    },
+    {
+      "name": "ETC",
+      "value": "ETC缴费"
+    },
+    {
+      "name": "hasETC",
+      "value": "有ETC"
+    },
+    {
+      "name": "noETC",
+      "value": "没有ETC"
+    },
+    {
+      "name": "select",
+      "value": "查询缴费信息"
+    },
+    {
+      "name": "info",
+      "value": "缴费信息"
+    },
+    {
+      "name": "pay",
+      "value": "支付"
+    },
+    {
+      "name": "total_cost",
+      "value": "合计费用"
+    },
+    {
+      "name": "twenty_yuan",
+      "value": "20元"
+    },
+    {
+      "name": "license_plate",
+      "value": "车牌号："
+    },
+    {
+      "name": "twenty_yuan_float",
+      "value": "20.0"
+    },
+    {
+      "name": "yuan",
+      "value": "元"
+    },
+    {
+      "name": "detail",
+      "value": "查看缴费费用信息"
+    },
+    {
+      "name": "confirm",
+      "value": "确认支付"
+    },
+    {
+      "name": "pay_success",
+      "value": "已支付成功"
+    },
+    {
+      "name": "pay_success_detail",
+      "value": "恭喜你，已成功支付"
+    },
+    {
+      "name": "i_know",
+      "value": "我知道了"
+    },
+    {
+      "name": "to_be_paid",
+      "value": "待支付"
+    },
+    {
+      "name": "twenty_yuan_char",
+      "value": "￥20.0"
+    }
+
+  ]
+}

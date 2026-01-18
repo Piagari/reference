@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "TITLE",
+      "value": "流水账单"
+    },
+    {
+      "name": "CapitalFlow",
+      "value": "流水"
+    },
+    {
+      "name": "income",
+      "value": "收入"
+    },
+    {
+      "name": "expenses",
+      "value": "支出"
+    },
+    {
+      "name": "Not_available",
+      "value": "暂无记录"
+    },
+    {
+      "name": "check_in",
+      "value": "入住"
+    },
+    {
+      "name": "check_out",
+      "value": "退房"
+    },
+    {
+      "name": "confirm",
+      "value": "确定"
+    },
+    {
+      "name": "cancel",
+      "value": "取消"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<!--
+  -   Copyright (c) 2025 Huawei Device Co., Ltd.
+  -   Licensed under the Apache License, Version 2.0 (the "License");
+  -   you may not use this file except in compliance with the License.
+  -   You may obtain a copy of the License at
+  -
+  -       http://www.apache.org/licenses/LICENSE-2.0
+  -
+  -   Unless required by applicable law or agreed to in writing, software
+  -   distributed under the License is distributed on an "AS IS" BASIS,
+  -   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  -   See the License for the specific language governing permissions and
+  -   limitations under the License.
+  -->
+
+<svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<circle id="椭圆 5" cx="9.000000" cy="9.000000" r="9.000000" fill="#09AA71" fill-opacity="1.000000"/>
+	<path id="始" d="M11.84 5.64L11.27 5.95C11.55 6.47 11.85 6.99 12.15 7.51Q10.67 7.64 9.2 7.68Q9.65 7.05 10.04 6.43C10.36 5.9 10.65 5.36 10.9 4.78L10.21 4.51C9.97 5.03 9.7 5.53 9.39 6.03Q8.96 6.77 8.45 7.47C8.34 7.63 8.19 7.74 7.97 7.79L8.14 8.5Q8.45 8.45 8.79 8.41C10.02 8.34 11.27 8.27 12.54 8.21C12.62 8.43 12.73 8.62 12.86 8.81L13.52 8.45C12.98 7.49 12.42 6.55 11.84 5.64ZM5.36 7.13Q5.13 8.72 4.73 10.29C5.18 10.63 5.63 10.99 6.07 11.39C5.88 11.67 5.68 11.93 5.45 12.16Q4.97 12.68 4.47 13.14L5.02 13.64C5.32 13.34 5.63 13.02 5.95 12.68Q6.29 12.28 6.61 11.85Q7.2 12.36 7.78 12.87L8.22 12.28L7.01 11.19Q7.06 11.08 7.1 10.97Q7.38 10.33 7.52 9.63C7.69 8.82 7.82 7.99 7.91 7.13L7.91 6.43L6.18 6.43Q6.27 5.52 6.38 4.66L5.64 4.58Q5.56 5.52 5.45 6.43L4.42 6.43L4.42 7.13L5.36 7.13ZM6.07 7.13L7.15 7.13C7.11 7.85 7.02 8.58 6.89 9.32C6.78 9.81 6.62 10.28 6.41 10.71L5.52 9.97Q5.87 8.58 6.07 7.13ZM8.57 9.5L8.57 13.58L9.31 13.58L9.31 12.99L12.15 12.99L12.15 13.58L12.91 13.58L12.91 9.5L8.57 9.5ZM9.31 10.21L12.15 10.21L12.15 12.28L9.31 12.28L9.31 10.21Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

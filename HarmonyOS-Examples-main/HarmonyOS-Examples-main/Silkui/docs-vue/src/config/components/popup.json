@@ -1,0 +1,35 @@
+{
+  "name": "popup",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "通过 `show` 属性控制弹出层是否显示，通过 `Children` 构建器设置弹出层内容。",
+      "image": "popup/basic.gif",
+      "code": "@State\nvar showPopup: Bool = false\n\n@Builder\nfunc PopupContent() {\n  Column(){\n    Text(\"内容\")\n    .fontSize(16)\n    .fontColor(@r(app.color.text_color))\n  }\n  .padding(64)\n}\n\nSilkPopup(\n  show: showPopup,\n  props: SilkPopupOptions(),\n  Children: PopupContent\n)\n\n// 在需要显示弹出层的地方\nButton(\"显示弹出层\").onClick({ _ => showPopup = true })"
+    },
+    {
+      "title": "弹出位置",
+      "description": "通过 `position` 属性设置弹出位置，支持 `top`、`bottom`、`left`、`right` 和 `center` 五个方向。",
+      "image": "popup/position.gif",
+      "code": "@Builder\nfunc TopPopupContent() {\n  Column(){\n    // 内容\n  }\n  .width(100.percent)\n  .height(30.percent)\n}\n\n@Builder\nfunc BottomPopupContent() {\n  Column(){\n    // 内容\n  }\n  .width(100.percent)\n  .height(30.percent)\n}\n\n// 顶部弹出\nSilkPopup(\n  show: showPopup,\n  props: SilkPopupOptions(\n    position: SilkPopupPosition.TOP\n  ),\n  Children: TopPopupContent\n)\n\n// 底部弹出\nSilkPopup(\n  show: showPopup,\n  props: SilkPopupOptions(\n    position: SilkPopupPosition.BOTTOM\n  ),\n  Children: BottomPopupContent\n)"
+    },
+    {
+      "title": "关闭图标",
+      "description": "通过 `showClose` 属性设置是否显示关闭图标，通过 `closeIcon` 属性自定义图标，通过 `closePosition` 属性设置图标位置。",
+      "image": "popup/close.gif",
+      "code": "@Builder\nfunc CloseIconPopupContent() {\n  Column(){\n    // 内容\n  }\n  .width(100.percent)\n  .height(30.percent)\n}\n\n@Builder\nfunc CustomIconPopupContent() {\n  Column(){\n    // 内容\n  }\n  .width(100.percent)\n  .height(30.percent)\n}\n\n// 显示关闭图标\nSilkPopup(\n  show: showPopup,\n  props: SilkPopupOptions(\n    position: SilkPopupPosition.BOTTOM,\n    showClose: true\n  ),\n  Children: CloseIconPopupContent\n)\n\n// 自定义图标\nSilkPopup(\n  show: showPopup,\n  props: SilkPopupOptions(\n    position: SilkPopupPosition.BOTTOM,\n    showClose: true,\n    closeIcon: @r(app.media.close)\n  ),\n  Children: CustomIconPopupContent\n)"
+    },
+    {
+      "title": "圆角弹窗",
+      "description": "通过 `round` 属性设置是否显示圆角，通过 `roundValue` 属性设置圆角大小。",
+      "image": "popup/round.gif",
+      "code": "@Builder\nfunc CenterRoundPopupContent() {\n  Column(){\n    Text(\"内容\")\n    .fontSize(16)\n    .fontColor(@r(app.color.text_color))\n  }\n  .padding(64)\n}\n\n@Builder\nfunc BottomRoundPopupContent() {\n  Column(){\n    // 内容\n  }\n  .width(100.percent)\n  .height(30.percent)\n}\n\n// 居中圆角弹窗\nSilkPopup(\n  show: showPopup,\n  props: SilkPopupOptions(\n    round: true,\n    roundValue: 16.vp\n  ),\n  Children: CenterRoundPopupContent\n)\n\n// 底部圆角弹窗\nSilkPopup(\n  show: showPopup,\n  props: SilkPopupOptions(\n    position: SilkPopupPosition.BOTTOM,\n    round: true,\n    roundValue: 16.vp\n  ),\n  Children: BottomRoundPopupContent\n)"
+    },
+    {
+      "title": "事件监听",
+      "description": "弹出层提供了多种事件监听方法，包括点击事件和生命周期事件。",
+      "image": "popup/events.gif",
+      "code": "@Builder\nfunc EventPopupContent() {\n  Column(){\n    Text(\"内容\")\n    .fontSize(16)\n    .fontColor(@r(app.color.text_color))\n  }\n  .padding(64)\n}\n\nSilkPopup(\n  show: showPopup,\n  props: SilkPopupOptions(\n    showClose: true,\n    round: true\n  ),\n  Children: EventPopupContent,\n  // 点击遮罩层\n  clickOverlay: { => PromptAction.showToast(message: \"点击遮罩层\") },\n  // 点击关闭图标\n  clickClose: { => PromptAction.showToast(message: \"点击关闭图标\") },\n  // 弹出层打开时触发\n  open: { => PromptAction.showToast(message: \"open\") },\n  // 弹出层打开动画结束后触发\n  opened: { => PromptAction.showToast(message: \"opened\") },\n  // 弹出层关闭时触发\n  close: { => PromptAction.showToast(message: \"close\") },\n  // 弹出层关闭动画结束后触发\n  closed: { => PromptAction.showToast(message: \"closed\") }\n)"
+    }
+  ]
+}

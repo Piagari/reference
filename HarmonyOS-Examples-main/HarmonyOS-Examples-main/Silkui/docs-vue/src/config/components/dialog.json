@@ -1,0 +1,29 @@
+{
+  "name": "dialog",
+  "examples": [
+    {
+      "title": "函数式调用",
+      "description": "通过 `ShowSilkDialog` 和 `ShowSilkConfirmDialog` 函数，可以快速创建对话框。",
+      "image": "dialog/basic.gif",
+      "code": "// 显示对话框\nShowSilkDialog(props: SilkDialogOptions(\n  title: \"标题\",\n  message: \"这是一段内容\"\n))\n// 显示对话框（无标题）\nShowSilkDialog(SilkDialogOptions(\n    message: \"生命远不止连轴转和忙到极限，人类的体验远比这辽阔、丰富得多。\"\n))\n// 显示确认对话框（带取消按钮）\nShowSilkConfirmDialog(props: SilkDialogOptions(\n  title: \"标题\",\n  message: \"这是一段内容\"\n))"
+    },
+    {
+      "title": "对话框类型",
+      "description": "通过 `theme` 属性可以设置不同风格的对话框。",
+      "image": "dialog/round.gif",
+      "code": "// 圆角风格\nShowSilkDialog(SilkDialogOptions(\n        title: \"标题\",\n        message: \"代码是写出来给人看的，附带能在机器上运行。\",\n        theme: SilkDialogTheme.ROUND_BUTTON,\n        linearGradient: SilkUILinearGradientOptions(\n            angle: 90.0,\n            colors: [(Color(255, 96, 52, alpha: 1.0), 0.0), (Color(238, 10, 36, alpha: 1.0), 1.0)]\n        )\n    )\n)\n\n// 圆角按钮风格\nShowSilkDialog(SilkDialogOptions(\n        message: \"生命远不止连轴转和忙到极限，人类的体验远比这辽阔、丰富得多。\",\n        theme: SilkDialogTheme.ROUND_BUTTON,\n        linearGradient: SilkUILinearGradientOptions(\n            angle: 90.0,\n            colors: [(Color(255, 96, 52, alpha: 1.0), 0.0), (Color(238, 10, 36, alpha: 1.0), 1.0)]\n        )\n    )\n)"
+    },
+    {
+      "title": "异步关闭",
+      "description": "通过 `beforeClose` 属性可以在关闭前执行异步操作 函数类型 `(action: String) -> Future<Bool>`。",
+      "image": "dialog/async.gif",
+      "code": "ShowSilkConfirmDialog(SilkDialogOptions(\n        title: \"标题\",\n        message: \"如果解决方法是丑陋的，那就肯定还有更好的解决方法，只是还没有发现而已。\",\n        beforeClose: { action =>\n            spawn {\n                =>\n                sleep(3 * Duration.second);\n                action == \"confirm\"\n            }\n        }\n    )\n)"
+    },
+    {
+      "title": "自定义内容",
+      "description": "通过插槽可以自定义对话框的内容。",
+      "image": "dialog/comp.gif",
+      "code": "@State\nvar showDialog: Bool = false\n\n@Builder\nfunc F4Body () {\n    Image(\"https://fastly.jsdelivr.net/npm/@vant/assets/apple-3.jpeg\")\n        .width(100.percent)\n    .padding(left: 20.vp, right: 20.vp, top: 25.vp)\n}\n\nSilkDialog(\n    show: showDialog,\nhasBody: true,\nBody: F4Body,\nprops: SilkDialogOptions(\n    title: \"标题\",\nshowCancel: true\n)\n)"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+*.so
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/ 
+./build
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.vscode
+build/
+.cjpm-history
+module-lock.json
+test/report/
+src/mysqlclient/z*_test.cj
+perf*
+tmp
+mysql
+unittest
+ci_test/
+ci_lib/
+cov_output/
+*.cjo
+*.gcda
+*.gcno
+bin/
+output/
+log/
+report/
+module-resolve.json
+temp_ci_lib/
+lib/
+*.o
+libmysqlclient_c/*.o
+libmysqlclient_c/Makefile
+*.macrocall
+.cache
+.vnext/
+*.lock
+target/
+test_temp/
+*.so
+*.so.*
+main
+*.bchir2

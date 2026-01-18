@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "智能分类"
+    },
+    {
+      "name": "Font_family_black",
+      "value": "鸿蒙黑体"
+    },
+    {
+      "name": "select_photo_button",
+      "value": "选择图片"
+    },
+    {
+      "name": "load_model_button",
+      "value": "加载模型"
+    },
+    {
+      "name": "run_model_button",
+      "value": "运行模型"
+    },
+    {
+      "name": "reason",
+      "value": "Used to initiate network data requests."
+    },
+    {
+      "name": "READ_IMAGEVIDEO_reason",
+      "value": "需要读取图片内容用于AI分类"
+    },
+    {
+      "name": "READ_MEDIA_reason",
+      "value": "需要读取文件内容的权限用于AI分类"
+    }
+  ]
+}

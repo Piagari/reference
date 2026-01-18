@@ -1,0 +1,59 @@
+{
+  "name": "rate",
+  "examples": [
+    {
+      "title": "基础用法",
+      "description": "基础评分用法。",
+      "image": "rate/basic.png",
+      "code": "SilkRate(props: SilkRateOptions())"
+    },
+    {
+      "title": "自定义图标",
+      "description": "可以自定义评分组件的图标。",
+      "image": "rate/custom-icon.png",
+      "code": "SilkRate(props: SilkRateOptions(\n  icon: \"like\",\n  voidIcon: \"like-o\"\n))"
+    },
+    {
+      "title": "自定义数量",
+      "description": "可以自定义评分组件的图标数量。",
+      "image": "rate/custom-count.png",
+      "code": "SilkRate(props: SilkRateOptions(\n  count: 6\n))"
+    },
+    {
+      "title": "自定义颜色",
+      "description": "可以自定义评分组件的颜色。",
+      "image": "rate/custom-color.png",
+      "code": "SilkRate(props: SilkRateOptions(\n  color: @r(app.color.primary_color)\n))"
+    },
+    {
+      "title": "半星",
+      "description": "设置 allowHalf 属性后可以选中半星。",
+      "image": "rate/half-star.png",
+      "code": "SilkRate(props: SilkRateOptions(\n  value: 2.5,\n  allowHalf: true\n))"
+    },
+    {
+      "title": "只读状态",
+      "description": "设置 readonly 属性后无法修改评分。",
+      "image": "rate/readonly.png",
+      "code": "SilkRate(props: SilkRateOptions(\n  value: 3,\n  readonly: true\n))"
+    },
+    {
+      "title": "禁用状态",
+      "description": "设置 disabled 属性后禁用评分。",
+      "image": "rate/disabled.png",
+      "code": "SilkRate(props: SilkRateOptions(\n  value: 3,\n  disabled: true\n))"
+    },
+    {
+      "title": "监听事件",
+      "description": "评分变化时，会触发 change 事件。",
+      "image": "rate/event.png",
+      "code": "@State\nvar score: Float64 = 3\n\nSilkRate(\n  props: SilkRateOptions(value: score),\n  change: {value => score = value}\n)"
+    },
+    {
+      "title": "双向绑定",
+      "description": "使用 @Link 装饰器可以实现双向绑定。",
+      "image": "rate/controlled.png",
+      "code": "@State\nvar score: Float64 = 3\n\nSilkRate(\n  props: SilkRateOptions(),\n  value: $score,\n  change: {value => score = value}\n)"
+    }
+  ]
+}

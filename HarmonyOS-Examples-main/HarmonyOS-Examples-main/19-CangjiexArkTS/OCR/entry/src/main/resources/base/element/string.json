@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Get and save image"
+    },
+    {
+      "name": "pending",
+      "value": "等待中..."
+    },
+    {
+      "name": "parsing",
+      "value": "解析中"
+    },
+    {
+      "name": "no_text",
+      "value": "未提取到文字"
+    },
+    {
+      "name": "parse_failed",
+      "value": "解析出错"
+    },
+    {
+      "name": "uploading",
+      "value": "上传中..."
+    },
+    {
+      "name": "photo_ocr",
+      "value": "拍照"
+    },
+    {
+      "name": "image_ocr",
+      "value": "图库"
+    },
+    {
+      "name": "document_label",
+      "value": "文件"
+    }
+  ]
+}

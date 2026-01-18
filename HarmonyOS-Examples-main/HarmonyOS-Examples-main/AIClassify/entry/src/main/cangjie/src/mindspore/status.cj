@@ -1,0 +1,76 @@
+package ohos_app_cangjie_entry.mindspore
+
+// MindSpore不同组件的代码。
+public type OH_AI_CompCode = Int64;
+public struct OH_AI_CompCodeEnum {
+  public static let OH_AI_COMPCODE_CORE: Int64 = 0x00000000;
+  public static let OH_AI_COMPCODE_MD: Int64 = 0x10000000;
+  public static let OH_AI_COMPCODE_ME: Int64 = 0x20000000;
+  public static let OH_AI_COMPCODE_MC: Int64 = 0x30000000;
+  public static let OH_AI_COMPCODE_LITE: Int64 = 0xF0000000;
+}
+
+
+  let OH_AI_COMPCODE_CORE: Int64 = 0x00000000;
+  let OH_AI_COMPCODE_MD: Int64 = 0x10000000;
+  let OH_AI_COMPCODE_ME: Int64 = 0x20000000;
+  let OH_AI_COMPCODE_MC: Int64 = 0x30000000;
+  let OH_AI_COMPCODE_LITE: Int64 = 0xF0000000;
+
+
+// MindSpore的状态码。
+public type OH_AI_Status = Int64;
+public struct OH_AI_StatusEnum {
+  public static let OH_AI_STATUS_SUCCESS: Int64 = 0;
+  public static let OH_AI_STATUS_CORE_FAILED: Int64 = OH_AI_COMPCODE_CORE | 0x1;
+  public static let OH_AI_STATUS_LITE_ERROR: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -1);
+  public static let OH_AI_STATUS_LITE_NULLPTR: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -2);
+  public static let OH_AI_STATUS_LITE_PARAM_INVALID: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -3);
+  public static let OH_AI_STATUS_LITE_NO_CHANGE: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -4);
+  public static let OH_AI_STATUS_LITE_SUCCESS_EXIT: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -5);
+  public static let OH_AI_STATUS_LITE_MEMORY_FAILED: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -6);
+  public static let OH_AI_STATUS_LITE_NOT_SUPPORT: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -7);
+  public static let OH_AI_STATUS_LITE_THREADPOOL_ERROR: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -8);
+  public static let OH_AI_STATUS_LITE_UNINITIALIZED_OBJ: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -9);
+  public static let OH_AI_STATUS_LITE_OUT_OF_TENSOR_RANGE: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -100);
+  public static let OH_AI_STATUS_LITE_INPUT_TENSOR_ERROR: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -101);
+  public static let OH_AI_STATUS_LITE_REENTRANT_ERROR: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -102);
+  public static let OH_AI_STATUS_LITE_GRAPH_FILE_ERROR: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -200);
+  public static let OH_AI_STATUS_LITE_NOT_FIND_OP: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -300);
+  public static let OH_AI_STATUS_LITE_INVALID_OP_NAME: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -301);
+  public static let OH_AI_STATUS_LITE_INVALID_OP_ATTR: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -302);
+  public static let OH_AI_STATUS_LITE_OP_EXECUTE_FAILURE: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -303);
+  public static let OH_AI_STATUS_LITE_FORMAT_ERROR: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -400);
+  public static let OH_AI_STATUS_LITE_INFER_ERROR: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -500);
+  public static let OH_AI_STATUS_LITE_INFER_INVALID: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -501);
+  public static let OH_AI_STATUS_LITE_INPUT_PARAM_INVALID: Int64 = OH_AI_COMPCODE_LITE | (0x0FFFFFFF & -600)
+
+  public static func get_error_message(status: Int64): String {
+    if (status == OH_AI_STATUS_SUCCESS) {"SUCCESS"}
+    else if (status == OH_AI_STATUS_CORE_FAILED) {"CORE_FAILED"}
+    else if (status == OH_AI_STATUS_LITE_ERROR) {"LITE_ERROR"}
+    else if (status == OH_AI_STATUS_LITE_NULLPTR) {"LITE_NULLPTR"}
+    else if (status == OH_AI_STATUS_LITE_PARAM_INVALID) {"LITE_PARAM_INVALID"}
+    else if (status == OH_AI_STATUS_LITE_NO_CHANGE) {"LITE_NO_CHANGE"}
+    else if (status == OH_AI_STATUS_LITE_SUCCESS_EXIT) {"LITE_SUCCESS_EXIT"}
+    else if (status == OH_AI_STATUS_LITE_MEMORY_FAILED) {"LITE_MEMORY_FAILED"}
+    else if (status == OH_AI_STATUS_LITE_NOT_SUPPORT) {"LITE_NOT_SUPPORT"}
+    else if (status == OH_AI_STATUS_LITE_THREADPOOL_ERROR) {"LITE_THREADPOOL_ERROR"}
+    else if (status == OH_AI_STATUS_LITE_UNINITIALIZED_OBJ) {"LITE_UNINITIALIZED_OBJ"}
+    else if (status == OH_AI_STATUS_LITE_OUT_OF_TENSOR_RANGE) {"LITE_OUT_OF_TENSOR_RANGE"}
+    else if (status == OH_AI_STATUS_LITE_INPUT_TENSOR_ERROR) {"LITE_INPUT_TENSOR_ERROR"}
+    else if (status == OH_AI_STATUS_LITE_REENTRANT_ERROR) {"LITE_REENTRANT_ERROR"}
+    else if (status == OH_AI_STATUS_LITE_GRAPH_FILE_ERROR) {"LITE_GRAPH_FILE_ERROR"}
+    else if (status == OH_AI_STATUS_LITE_NOT_FIND_OP) {"LITE_NOT_FIND_OP"}
+    else if (status == OH_AI_STATUS_LITE_INVALID_OP_NAME) {"LITE_INVALID_OP_NAME"}
+    else if (status == OH_AI_STATUS_LITE_INVALID_OP_ATTR) {"LITE_INVALID_OP_ATTR"}
+    else if (status == OH_AI_STATUS_LITE_OP_EXECUTE_FAILURE) {"LITE_OP_EXECUTE_FAILURE"}
+    else if (status == OH_AI_STATUS_LITE_FORMAT_ERROR) {"LITE_FORMAT_ERROR"}
+    else if (status == OH_AI_STATUS_LITE_INFER_ERROR) {"LITE_INFER_ERROR"}
+    else if (status == OH_AI_STATUS_LITE_INFER_INVALID) {"LITE_INFER_INVALID"}
+    else if (status == OH_AI_STATUS_LITE_INPUT_PARAM_INVALID) {"LITE_INPUT_PARAM_INVALID"}
+    else {"UNKNOW ERROR"}
+  }
+}
+
+

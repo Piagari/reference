@@ -1,0 +1,23 @@
+**/node_modules
+/oh_modules
+/local.properties
+/.idea
+/.vscode
+/.augment
+**/build
+/.hvigor
+.cxx
+/.clangd
+/.clang-format
+/.clang-tidy
+**/.test
+/.appanalyzer
+**/cj_res
+**/*.cj.macrocall
+**/ability_mainability_entry.cj
+**/module_**_entry.cj
+
+# 自动生成的文档文件
+docs-vue/public/markdown/
+/docs/
+**.DS_Store

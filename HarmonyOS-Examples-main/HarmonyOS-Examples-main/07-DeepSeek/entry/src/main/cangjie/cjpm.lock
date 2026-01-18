@@ -1,0 +1,4 @@
+version = 0
+
+[requires]
+  CJson = {branch = "ohos-5.0", commitId = "ce15c5c552b9c25e3d385b770df473bb0873e4af", git = "https://gitcode.com/Cangjie-TPC/CJson.git"}

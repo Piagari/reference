@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="150" fill="#F2F3F5"/>
+  <text x="150" y="75" font-family="Arial" font-size="16" text-anchor="middle" fill="#969799">按钮示例图片</text>
+  <text x="150" y="95" font-family="Arial" font-size="12" text-anchor="middle" fill="#969799">（实际使用时请替换为真实截图）</text>
+</svg>

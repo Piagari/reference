@@ -1,0 +1,70 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "main_background",
+      "value": "#F6F7F9"
+    },
+    {
+      "name": "font_color",
+      "value": "#191919"
+    },
+    {
+      "name": "selected_color",
+      "value": "#F2F4FF"
+    },
+    {
+      "name": "black_color",
+      "value": "#000000"
+    },
+    {
+      "name": "red_color",
+      "value": "#FF0115"
+    },
+    {
+      "name": "option_background",
+      "value": "#F0F0F0"
+    },
+    {
+      "name": "text_color_gray",
+      "value": "#808080"
+    },
+    {
+      "name": "text_color_gray1",
+      "value": "#979797"
+    },
+    {
+      "name": "selected_border",
+      "value": "#99C3F5"
+    },
+    {
+      "name": "divider_color",
+      "value": "#0A59F7"
+    },
+
+    {
+      "name": "blue_color",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "license_plate_color",
+      "value": "#F6F6F8"
+    },
+    {
+      "name": "text_input_color",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "gray_font",
+      "value": "#808080"
+    },
+    {
+      "name": "gray_border",
+      "value": "#B0B0B0"
+    }
+
+  ]
+}

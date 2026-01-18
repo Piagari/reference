@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "music_list_bg_color",
+      "value": "#FFFAF2FF"
+    },
+    {
+      "name": "font_secondary",
+      "value": "#99000000"
+    },
+    {
+      "name": "bg_primary",
+      "value": "#ffffffff"
+    }
+  ]
+}

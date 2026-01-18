@@ -1,0 +1,69 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "课程表"
+    },
+
+    {
+      "name": "course1",
+      "value": "B4037 软件项目管理   1-18周 2C304"
+    },
+    {
+      "name": "course2",
+      "value": "B1469 Java Web框架技术   1-18周 1504"
+    },
+    {
+      "name": "course3",
+      "value": "B1427 统一建模语言   1-18周 1509"
+    },
+    {
+      "name": "course4",
+      "value": "B1678 网络管理与维护   1-18周 1510"
+    },
+    {
+      "name": "course5",
+      "value": "B2857 软件工程   1-18周 1411"
+    },
+    {
+      "name": "course6",
+      "value": "B0383 大学生就业指导   1-8周 3406"
+    },
+    {
+      "name": "course1_1",
+      "value": "B4037 软件项目管理   1、3、5、7、9、11、13、15、17周 2C304"
+    },
+    {
+      "name": "course7",
+      "value": "B3873 信息检索   1-8周 3408"
+    },
+    {
+      "name": "course8",
+      "value": "B1478 移动应用开发综合实训   1-18周 2C602"
+    },
+    {
+      "name": "course4_1",
+      "value": "B1678 网络管理与维护   2、4、6、8、10、12、14、16、18周 1604"
+    },
+    {
+      "name": "course5_1",
+      "value": "B2857 软件工程   1、3、5、7、9、11、13、15、17周 1509"
+    },
+    {
+      "name": "course9",
+      "value": "B2857 软件工程综合实训   11-12周 1502"
+    },
+    {
+      "name": "empty",
+      "value": "-"
+    }
+  ]
+}
